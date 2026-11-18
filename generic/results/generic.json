@@ -1,0 +1,993 @@
+{
+  "battery/cells/a123_lfp_discharge_1p15c_298k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 1.8845619598017456
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__a123_lfp_discharge_1p15c_298k/a123_lfp_discharge_1p15c_298k__RNZ8kiW",
+    "verification": "verified"
+  },
+  "battery/cells/a123_lfp_energy_0p88c_300k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "score": 1.0,
+        "value": 6.164077036791239
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__a123_lfp_energy_0p88c_300k/a123_lfp_energy_0p88c_300k__Pwrpyho",
+    "verification": "verified"
+  },
+  "battery/cells/a123_lfp_mean_voltage_1p52c_297k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "score": 1.0,
+        "value": 17.168484469787806
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__a123_lfp_mean_voltage_1p52c_297k/a123_lfp_mean_voltage_1p52c_297k__AtK3GEj",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_discharge_0p62c_293k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 0.17024940977584346
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__ecker_graphite_discharge_0p62c_293k/ecker_graphite_discharge_0p62c_2__zqyZtXj",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_energy_1p12c_298k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "score": 1.0,
+        "value": 0.6272279449065231
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__ecker_graphite_energy_1p12c_298k/ecker_graphite_energy_1p12c_298k__DJQ9GF5",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_mean_voltage_0p84c_292k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "score": 1.0,
+        "value": 1.6583241991107383
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__ecker_graphite_mean_voltage_0p84c_292k/ecker_graphite_mean_voltage_0p84__jPkdhGA",
+    "verification": "verified"
+  },
+  "battery/cells/kokam_lco_discharge_0p71c_302k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 0.8603974617406296
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__kokam_lco_discharge_0p71c_302k/kokam_lco_discharge_0p71c_302k__hS8Lzfm",
+    "verification": "verified"
+  },
+  "battery/cells/lco_graphite_discharge_1p27c_295k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 2.3984333206449198
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lco_graphite_discharge_1p27c_295k/lco_graphite_discharge_1p27c_295__ZQixF8C",
+    "verification": "verified"
+  },
+  "battery/cells/lco_graphite_energy_1p73c_296k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "score": 1.0,
+        "value": 8.661484624101494
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lco_graphite_energy_1p73c_296k/lco_graphite_energy_1p73c_296k__Yu9Aiuk",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_fast_charge_current_limit_45c": {
+    "kpis": {
+      "charge_time_at_limit_s": {
+        "score": 1.0,
+        "value": 4478.972613597955
+      },
+      "i_charge_max_a": {
+        "score": 1.0,
+        "value": 7.202880859375
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lgm50_fast_charge_current_limit_45c/lgm50_fast_charge_current_limit__x3LmHHZ",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_discharge_2p3c_288k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 4.7050082614339415
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lgm50_nmc811_discharge_2p3c_288k/lgm50_nmc811_discharge_2p3c_288k__ciw4ibr",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_energy_1p6c_301k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "score": 1.0,
+        "value": 16.625378906281945
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lgm50_nmc811_energy_1p6c_301k/lgm50_nmc811_energy_1p6c_301k__JWZay2H",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_mean_voltage_0p78c_294k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "score": 1.0,
+        "value": 3.219267335625478
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__lgm50_nmc811_mean_voltage_0p78c_294k/lgm50_nmc811_mean_voltage_0p78c__juU3Knh",
+    "verification": "verified"
+  },
+  "battery/cells/nca_graphite_discharge_0p93c_299k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 0.4765674098914032
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__nca_graphite_discharge_0p93c_299k/nca_graphite_discharge_0p93c_299__sNfPVmu",
+    "verification": "verified"
+  },
+  "battery/cells/nmc_pouch_discharge_1p8c_303k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "score": 1.0,
+        "value": 4.786355503228657
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__nmc_pouch_discharge_1p8c_303k/nmc_pouch_discharge_1p8c_303k__MowkXDE",
+    "verification": "verified"
+  },
+  "battery/cells/nmc_pouch_energy_2p4c_299k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "score": 1.0,
+        "value": 16.956181966353707
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__cells__nmc_pouch_energy_2p4c_299k/nmc_pouch_energy_2p4c_299k__HWqgkSC",
+    "verification": "verified"
+  },
+  "battery/characterization/a123_cccv_charge_1p1c_from_soc0p26": {
+    "kpis": {
+      "charge_time_s": {
+        "score": 1.0,
+        "value": 2612.2173443013617
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__a123_cccv_charge_1p1c_from_soc0p26/a123_cccv_charge_1p1c_from_soc0p__RSaAX2v",
+    "verification": "verified"
+  },
+  "battery/characterization/a123_pulse_resistance_1p8a_soc0p51": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.031714885678117234
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__a123_pulse_resistance_1p8a_soc0p51/a123_pulse_resistance_1p8a_soc0p__TNnVkuz",
+    "verification": "verified"
+  },
+  "battery/characterization/kokam_cccv_charge_0p64c_from_soc0p31": {
+    "kpis": {
+      "charge_time_s": {
+        "score": 1.0,
+        "value": 6548.93314681742
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__kokam_cccv_charge_0p64c_from_soc0p31/kokam_cccv_charge_0p64c_from_soc__anXXEht",
+    "verification": "verified"
+  },
+  "battery/characterization/kokam_pulse_resistance_1p2a_soc0p47": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.1010105870104272
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__kokam_pulse_resistance_1p2a_soc0p47/kokam_pulse_resistance_1p2a_soc0__P8YUo2R",
+    "verification": "verified"
+  },
+  "battery/characterization/lco_graphite_pulse_resistance_0p9a_soc0p66": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.044372831159761934
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__lco_graphite_pulse_resistance_0p9a_soc0p66/lco_graphite_pulse_resistance_0p__RnuYXMG",
+    "verification": "verified"
+  },
+  "battery/characterization/lgm50_cccv_charge_1p52c_from_soc0p12": {
+    "kpis": {
+      "charge_time_s": {
+        "score": 1.0,
+        "value": 6711.393993632784
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__lgm50_cccv_charge_1p52c_from_soc0p12/lgm50_cccv_charge_1p52c_from_soc__89FBM3T",
+    "verification": "verified"
+  },
+  "battery/characterization/lgm50_pulse_resistance_5a_soc0p62": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.023464649897434596
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__lgm50_pulse_resistance_5a_soc0p62/lgm50_pulse_resistance_5a_soc0p6__z2Ytvn6",
+    "verification": "verified"
+  },
+  "battery/characterization/nca_cccv_charge_0p79c_from_soc0p35": {
+    "kpis": {
+      "charge_time_s": {
+        "score": 1.0,
+        "value": 3708.054947419096
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__nca_cccv_charge_0p79c_from_soc0p35/nca_cccv_charge_0p79c_from_soc0p__RebHDcx",
+    "verification": "verified"
+  },
+  "battery/characterization/nca_pulse_resistance_0p6a_soc0p74": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.0227243495627875
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__nca_pulse_resistance_0p6a_soc0p74/nca_pulse_resistance_0p6a_soc0p7__TcMuf8J",
+    "verification": "verified"
+  },
+  "battery/characterization/nmc_pouch_cccv_charge_1p3c_from_soc0p23": {
+    "kpis": {
+      "charge_time_s": {
+        "score": 1.0,
+        "value": 3366.0516647941977
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__nmc_pouch_cccv_charge_1p3c_from_soc0p23/nmc_pouch_cccv_charge_1p3c_from__W7ct4rY",
+    "verification": "verified"
+  },
+  "battery/characterization/nmc_pouch_pulse_resistance_4p1a_soc0p55": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "score": 1.0,
+        "value": 0.008515761140472434
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__characterization__nmc_pouch_pulse_resistance_4p1a_soc0p55/nmc_pouch_pulse_resistance_4p1a__BJy9prB",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_plating_fade_9_cycles_1p3c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "score": 1.0,
+        "value": 22.71162850406788
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__degradation__lgm50_plating_fade_9_cycles_1p3c/lgm50_plating_fade_9_cycles_1p3c__aqKM4zq",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_sei_fade_12_cycles_1c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "score": 1.0,
+        "value": 0.32798180941457944
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__degradation__lgm50_sei_fade_12_cycles_1c/lgm50_sei_fade_12_cycles_1c__PdPB6yM",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_sei_plating_fade_10_cycles_1p5c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "score": 1.0,
+        "value": 0.5291490023844366
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__degradation__lgm50_sei_plating_fade_10_cycles_1p5c/lgm50_sei_plating_fade_10_cycles__NN8XCDw",
+    "verification": "verified"
+  },
+  "battery/thermal/lco_graphite_thermal_rise_2p35c_299k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "score": 1.0,
+        "value": 9.933313551420497
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__thermal__lco_graphite_thermal_rise_2p35c_299k/lco_graphite_thermal_rise_2p35c__LS5ug7m",
+    "verification": "verified"
+  },
+  "battery/thermal/lgm50_okane_thermal_rise_1p85c_292k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "score": 1.0,
+        "value": 31.36791783839908
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__thermal__lgm50_okane_thermal_rise_1p85c_292k/lgm50_okane_thermal_rise_1p85c_2__RgpkJXB",
+    "verification": "verified"
+  },
+  "battery/thermal/lgm50_thermal_rise_0p91c_303k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "score": 1.0,
+        "value": 11.335160192725425
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__thermal__lgm50_thermal_rise_0p91c_303k/lgm50_thermal_rise_0p91c_303k__RJzuVpC",
+    "verification": "verified"
+  },
+  "battery/thermal/nmc_pouch_thermal_rise_2p7c_305k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "score": 1.0,
+        "value": 8.448254785156507
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__battery__thermal__nmc_pouch_thermal_rise_2p7c_305k/nmc_pouch_thermal_rise_2p7c_305k__YZT7FyY",
+    "verification": "verified"
+  },
+  "cfd/fluids/backstep_laminar_armaly_re389": {
+    "kpis": {
+      "reattachment_length_xr_over_h": {
+        "score": 1.0,
+        "value": 8.34173129
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__backstep_laminar_armaly_re389/backstep_laminar_armaly_re389__KN5qg2H",
+    "verification": "verified"
+  },
+  "cfd/fluids/bump_in_channel_2d": {
+    "kpis": {
+      "cd_total": {
+        "score": 1.0,
+        "value": 0.0036601169
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__bump_in_channel_2d/bump_in_channel_2d__ZC8VqvD",
+    "verification": "verified"
+  },
+  "cfd/fluids/channel_developing_entry": {
+    "kpis": {
+      "u_centerline_ratio": {
+        "score": 1.0,
+        "value": 1.2464664
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__channel_developing_entry/channel_developing_entry__vFYgsAw",
+    "verification": "verified"
+  },
+  "cfd/fluids/channel_retau395_repair_closure": {
+    "error": "result.json missing from the submission root",
+    "failure_category": "contract_invalid",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/generic__cfd__fluids__channel_retau395_repair_closure/channel_retau395_repair_closure__N3WP6Rd",
+    "verification": "failed"
+  },
+  "cfd/fluids/cylinder_schafer_turek_2d1_cd": {
+    "kpis": {
+      "cd": {
+        "score": 1.0,
+        "value": 5.58554142
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__cylinder_schafer_turek_2d1_cd/cylinder_schafer_turek_2d1_cd__SxmK2An",
+    "verification": "verified"
+  },
+  "cfd/fluids/de_vahl_davis_natural_convection_ra1e4": {
+    "kpis": {
+      "nu_avg_hot_wall": {
+        "score": 1.0,
+        "value": 2.2485553
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__de_vahl_davis_natural_convection_ra1e4/de_vahl_davis_natural_convection__bgiZM2i",
+    "verification": "verified"
+  },
+  "cfd/fluids/flatplate_zpg_subsonic": {
+    "error": "result.json missing from the submission root",
+    "failure_category": "contract_invalid",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/generic__cfd__fluids__flatplate_zpg_subsonic/flatplate_zpg_subsonic__tQhhBtG",
+    "verification": "failed"
+  },
+  "cfd/fluids/kovasznay_flow_re40": {
+    "kpis": {
+      "observed_order_u": {
+        "score": 1.0,
+        "value": 1.9866263546845822
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__kovasznay_flow_re40/kovasznay_flow_re40__9gB4P3b",
+    "verification": "verified"
+  },
+  "cfd/fluids/lid_driven_cavity_ghia_re1000": {
+    "kpis": {
+      "u_min_vertical_centerline": {
+        "score": 1.0,
+        "value": -0.38128992
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__lid_driven_cavity_ghia_re1000/lid_driven_cavity_ghia_re1000__VuousY7",
+    "verification": "verified"
+  },
+  "cfd/fluids/naca0012_subsonic": {
+    "kpis": {
+      "CD_at_alpha_10": {
+        "score": 1.0,
+        "value": 0.0125838623
+      },
+      "CL_at_alpha_10": {
+        "score": 1.0,
+        "value": 1.07322973
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__naca0012_subsonic/naca0012_subsonic__mcyKpjQ",
+    "verification": "verified"
+  },
+  "cfd/fluids/plane_poiseuille_friction_factor": {
+    "kpis": {
+      "observed_order_u": {
+        "score": 1.0,
+        "value": 1.9985432044424583
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__plane_poiseuille_friction_factor/plane_poiseuille_friction_factor__TbE5R5c",
+    "verification": "verified"
+  },
+  "cfd/fluids/taylor_green_vortex_2d_re100": {
+    "kpis": {
+      "u_peak_at_tstar": {
+        "score": 1.0,
+        "value": 0.899543218
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__taylor_green_vortex_2d_re100/taylor_green_vortex_2d_re100__xfZVRn8",
+    "verification": "verified"
+  },
+  "cfd/fluids/turbulent_channel_flow_retau590": {
+    "error": "result.json missing from the submission root",
+    "failure_category": "contract_invalid",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/generic__cfd__fluids__turbulent_channel_flow_retau590/turbulent_channel_flow_retau590__EqnfeqM",
+    "verification": "failed"
+  },
+  "combustion/flames/c2h4_air_flame_speed_phi1p14_1p2atm_309k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 94.23633791572861
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__c2h4_air_flame_speed_phi1p14_1p2atm_309k/c2h4_air_flame_speed_phi1p14_1p2__ZaWHvnD",
+    "verification": "verified"
+  },
+  "combustion/flames/c2h6_air_flame_speed_phi1p09_1p3atm_316k": {
+    "kpis": {
+      "unity_lewis_speed_ratio": {
+        "score": 1.0,
+        "value": 0.7124448306685538
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__c2h6_air_flame_speed_phi1p09_1p3atm_316k/c2h6_air_flame_speed_phi1p09_1p3__oRpaxNZ",
+    "verification": "verified"
+  },
+  "combustion/flames/c3h8_air_flame_speed_phi1p11_1p3atm_313k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 51.15571541496108
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__c3h8_air_flame_speed_phi1p11_1p3atm_313k/c3h8_air_flame_speed_phi1p11_1p3__FEoNjHU",
+    "verification": "verified"
+  },
+  "combustion/flames/ch3oh_air_flame_speed_phi1p16_1p3atm_337k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 56.73261413506846
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__ch3oh_air_flame_speed_phi1p16_1p3atm_337k/ch3oh_air_flame_speed_phi1p16_1p__ACfKP63",
+    "verification": "verified"
+  },
+  "combustion/flames/ch4_air_flame_speed_meet_resolution_spec": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 38.814880153691824
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__ch4_air_flame_speed_meet_resolution_spec/ch4_air_flame_speed_meet_resolut__piPiw5D",
+    "verification": "verified"
+  },
+  "combustion/flames/ch4_air_flame_speed_phi1p24_1p6atm_306k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 24.93502876552075
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__ch4_air_flame_speed_phi1p24_1p6atm_306k/ch4_air_flame_speed_phi1p24_1p6a__TAHJcbE",
+    "verification": "verified"
+  },
+  "combustion/flames/h2_air_flame_speed_phi1p12_1p2atm_312k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 279.5499332321512
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__h2_air_flame_speed_phi1p12_1p2atm_312k/h2_air_flame_speed_phi1p12_1p2at__AaMJqtv",
+    "verification": "verified"
+  },
+  "combustion/flames/nh3_air_flame_speed_phi1p12_1p4atm_319k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 11.669835921381281
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__nh3_air_flame_speed_phi1p12_1p4atm_319k/nh3_air_flame_speed_phi1p12_1p4a__gaRdyGM",
+    "verification": "verified"
+  },
+  "combustion/flames/nh3_flame_speed_repair_mechanism": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "score": 1.0,
+        "value": 9.821454827422265
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__flames__nh3_flame_speed_repair_mechanism/nh3_flame_speed_repair_mechanism__a7zaGrg",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h2_air_idt_phi0p74_1462k_6p4atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.018192827458404184
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__c2h2_air_idt_phi0p74_1462k_6p4atm/c2h2_air_idt_phi0p74_1462k_6p4at__YdWPRJd",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h4_air_idt_phi0p68_1641k_11p8atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.002534931370495041
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__c2h4_air_idt_phi0p68_1641k_11p8atm/c2h4_air_idt_phi0p68_1641k_11p8a__ywEyyiW",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h6_air_idt_phi0p63_1547k_7p3atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.012072108316059859
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__c2h6_air_idt_phi0p63_1547k_7p3atm/c2h6_air_idt_phi0p63_1547k_7p3at__KKYdYst",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c3h8_air_idt_phi0p59_1568k_8p1atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.010673239654049645
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__c3h8_air_idt_phi0p59_1568k_8p1atm/c3h8_air_idt_phi0p59_1568k_8p1at__S7xLhQc",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch3oh_air_idt_phi0p66_1583k_6p8atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.02105408516949533
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__ch3oh_air_idt_phi0p66_1583k_6p8atm/ch3oh_air_idt_phi0p66_1583k_6p8a__YAsLA95",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_phi0p55_1633k_9p2atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.0492815029784376
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__ch4_air_idt_phi0p55_1633k_9p2atm/ch4_air_idt_phi0p55_1633k_9p2atm__7BERA7v",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_resume_interrupted_run": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 2.1863091162738266
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__ch4_air_idt_resume_interrupted_run/ch4_air_idt_resume_interrupted_r__zzkmhUr",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 1.718305479842798
+      },
+      "s_ch3_ho2": {
+        "score": 1.0,
+        "value": -0.2246116388416874
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k/ch4_air_idt_sensitivity_ch3ho2_p__DExeMLG",
+    "verification": "verified"
+  },
+  "combustion/kinetics/h2_air_idt_phi0p57_1246k_5p4atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.009592509937284244
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__h2_air_idt_phi0p57_1246k_5p4atm/h2_air_idt_phi0p57_1246k_5p4atm__kHi5bUE",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ndodecane_air_idt_phi0p83_1319k_14p2atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.022097548205455373
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__ndodecane_air_idt_phi0p83_1319k_14p2atm/ndodecane_air_idt_phi0p83_1319k__sPy9J8y",
+    "verification": "verified"
+  },
+  "combustion/kinetics/nh3_air_idt_phi0p72_1521k_5p1atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.4806600353922438
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__nh3_air_idt_phi0p72_1521k_5p1atm/nh3_air_idt_phi0p72_1521k_5p1atm__z7rYNTr",
+    "verification": "verified"
+  },
+  "combustion/kinetics/nhexane_air_idt_phi0p79_1442k_4p6atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "score": 1.0,
+        "value": 0.035011269692460004
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__combustion__kinetics__nhexane_air_idt_phi0p79_1442k_4p6atm/nhexane_air_idt_phi0p79_1442k_4p__r4v95oU",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim118um_k4p7_h22600": {
+    "kpis": {
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 99.42533
+      },
+      "t_hbm_e_max_c": {
+        "score": 1.0,
+        "value": 38.4309
+      },
+      "t_hbm_w_max_c": {
+        "score": 1.0,
+        "value": 40.61384
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim118um_k4p7_h22600/pkg25d_thermal_tim118um_k4p7_h22__7df837Y",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim142um_k3p6_h14200": {
+    "kpis": {
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 114.0885
+      },
+      "t_hbm_e_max_c": {
+        "score": 1.0,
+        "value": 42.40576
+      },
+      "t_hbm_w_max_c": {
+        "score": 1.0,
+        "value": 46.74805
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim142um_k3p6_h14200/pkg25d_thermal_tim142um_k3p6_h14__QnxEdAP",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim32um_k8p4_h19000": {
+    "kpis": {
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 87.53315
+      },
+      "t_hbm_e_max_c": {
+        "score": 1.0,
+        "value": 39.52999
+      },
+      "t_hbm_w_max_c": {
+        "score": 1.0,
+        "value": 43.29495
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim32um_k8p4_h19000/pkg25d_thermal_tim32um_k8p4_h190__cpcmXpw",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim58um_k9p1_h9400": {
+    "kpis": {
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 104.0781
+      },
+      "t_hbm_e_max_c": {
+        "score": 1.0,
+        "value": 50.54111
+      },
+      "t_hbm_w_max_c": {
+        "score": 1.0,
+        "value": 56.73513
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim58um_k9p1_h9400/pkg25d_thermal_tim58um_k9p1_h940__YKySNvL",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim85um_k6p2_h11500": {
+    "kpis": {
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 112.1497
+      },
+      "t_hbm_e_max_c": {
+        "score": 1.0,
+        "value": 47.7135
+      },
+      "t_hbm_w_max_c": {
+        "score": 1.0,
+        "value": 52.74104
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim85um_k6p2_h11500/pkg25d_thermal_tim85um_k6p2_h115__XiVPujU",
+    "verification": "verified"
+  },
+  "packaging/thermal/pkg25d_thermal_tim_delta_118to32_h22600": {
+    "kpis": {
+      "delta_t_asic_c": {
+        "score": 1.0,
+        "value": -27.19162
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermal__pkg25d_thermal_tim_delta_118to32_h22600/pkg25d_thermal_tim_delta_118to32__dUvo49C",
+    "verification": "verified"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim126um_k3p9_h8700": {
+    "kpis": {
+      "sigma_xx_interposer_under_asic_mpa": {
+        "score": 1.0,
+        "value": 39.642367
+      },
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 111.5306
+      },
+      "warpage_um": {
+        "score": 1.0,
+        "value": 44.134779
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermomechanical__pkg25d_warpage_tim126um_k3p9_h8700/pkg25d_warpage_tim126um_k3p9_h87__NHc3hNK",
+    "verification": "verified"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim41um_k9p8_h24500": {
+    "kpis": {
+      "sigma_xx_interposer_under_asic_mpa": {
+        "score": 1.0,
+        "value": 22.554918
+      },
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 80.77896
+      },
+      "warpage_um": {
+        "score": 1.0,
+        "value": 12.971305
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermomechanical__pkg25d_warpage_tim41um_k9p8_h24500/pkg25d_warpage_tim41um_k9p8_h245__7vTDQ6m",
+    "verification": "verified"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim72um_k6p6_h16300": {
+    "kpis": {
+      "sigma_xx_interposer_under_asic_mpa": {
+        "score": 1.0,
+        "value": 28.340208
+      },
+      "t_asic_max_c": {
+        "score": 1.0,
+        "value": 92.48059
+      },
+      "warpage_um": {
+        "score": 1.0,
+        "value": 23.724849
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__packaging__thermomechanical__pkg25d_warpage_tim72um_k6p6_h16300/pkg25d_warpage_tim72um_k6p6_h163__xpjwETy",
+    "verification": "verified"
+  }
+}

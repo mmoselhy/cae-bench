@@ -1,0 +1,20 @@
+{
+  "cfd/fluids/lid_driven_cavity_ghia_re1000": {
+    "error": "result.json missing from the submission root",
+    "failure_category": "contract_invalid",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_empty__cfd__fluids__lid_driven_cavity_ghia_re1000/lid_driven_cavity_ghia_re1000__zzWaZ3L",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim118um_k4p7_h22600": {
+    "error": "result.json missing from the submission root",
+    "failure_category": "contract_invalid",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_empty__packaging__thermal__pkg25d_thermal_tim118um_k4p7_h22600/pkg25d_thermal_tim118um_k4p7_h22__2k6Cspk",
+    "verification": "failed"
+  }
+}

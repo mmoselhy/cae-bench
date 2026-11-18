@@ -1,0 +1,28 @@
+{
+  "cfd/fluids/bump_in_channel_2d": {
+    "kpis": {
+      "cd_total": {
+        "score": 1.0,
+        "value": 0.0036601169
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/meshproof__cfd__fluids__bump_in_channel_2d/bump_in_channel_2d__EYYCaoi"
+  },
+  "cfd/fluids/naca0012_subsonic": {
+    "kpis": {
+      "CD_at_alpha_10": {
+        "score": 1.0,
+        "value": 0.0125838624
+      },
+      "CL_at_alpha_10": {
+        "score": 1.0,
+        "value": 1.0732297
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/meshproof__cfd__fluids__naca0012_subsonic/naca0012_subsonic__Yr7CjGg"
+  }
+}

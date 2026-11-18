@@ -1,0 +1,20 @@
+{
+  "cfd/fluids/lid_driven_cavity_ghia_re1000": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__lid_driven_cavity_ghia_re1000/lid_driven_cavity_ghia_re1000__rGAcy5i",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim118um_k4p7_h22600": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim118um_k4p7_h22600/pkg25d_thermal_tim118um_k4p7_h22__mkjvb3T",
+    "verification": "failed"
+  }
+}

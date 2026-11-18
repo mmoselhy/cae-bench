@@ -1,0 +1,24 @@
+{
+  "profile": "opensource",
+  "task": "../dist/opensource/battery/thermal/lgm50_thermal_rise_0p91c_303k",
+  "recorded_at": "2026-11-18T17:50:54+00:00",
+  "note": "tool self-test: upstream oracle submission + hand-written replay.sh/result.json",
+  "solver": "pybamm",
+  "solver_version": "26.7.1.0",
+  "verifier_status": "completed",
+  "verification": "verified",
+  "failure_category": null,
+  "score": 1.0,
+  "kpis": {
+    "max_temperature_rise_K": {
+      "gt_value": 11.3352,
+      "pass_tol": 0.56676,
+      "value": 11.335160192725425,
+      "error": -3.980727457530975e-05,
+      "error_in_band_widths": 7.023656322836782e-05,
+      "inside_band": true,
+      "inside_physics_window": true
+    }
+  },
+  "policy": "Recorded only. Bands and reference values are never changed by this tool."
+}

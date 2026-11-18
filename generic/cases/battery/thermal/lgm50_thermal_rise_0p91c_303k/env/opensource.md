@@ -1,0 +1,1 @@
+- The parameter set is PyBaMM's `ORegan2022`. It ships with the installed PyBaMM distribution and can be loaded by that exact string.

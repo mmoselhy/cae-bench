@@ -9,6 +9,11 @@ format is described in the environment section below. It is NASA's own grid
 for this case (14,080 cells, wall-resolved). **Use it as it is** -- do not
 regenerate, refine or coarsen it. The expected answer corresponds to this mesh.
 
+It is also supplied in a tool-neutral form, `/tmp/agent/inputs/mesh/mesh.msh`
+(Gmsh MSH 2.2 ASCII: hexahedra in physical group `fluid`, boundary quads in one
+physical group per patch, named as below), with the patch types (wall, inflow/outflow,
+spanwise) in `mesh.patches.json` beside it. Both forms are the same grid.
+
 ## Geometry
 
 Flat plate along the lower boundary over `0 ≤ x ≤ 1.5`, carrying a smooth bump

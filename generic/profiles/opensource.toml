@@ -42,7 +42,7 @@ provides = [
   "echem.aging.sei",
   "echem.aging.plating",
   "echem.params.pybamm",
-  "echem.params.bpx",
+  "echem.params.tabulated",
   "native.openfoam",
   "native.cantera",
 ]

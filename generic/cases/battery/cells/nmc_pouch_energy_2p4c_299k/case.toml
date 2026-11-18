@@ -1,0 +1,9 @@
+original = "cases/battery/cells/nmc_pouch_energy_2p4c_299k"
+track = "pybamm_trace"
+domain = "battery"
+requires = ["echem.dfn", "echem.params.tabulated"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is PyBaMM's own output for this named model and parameter set (gt_type high-fidelity-solver). Another electrochemical code solves the same model class but with its own discretisation and model variants, and must be calibrated before its scores are trusted."
+figure = true
+[shared_inputs]
+"parameters" = "parameters/Mohtat2020"

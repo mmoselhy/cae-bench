@@ -1,0 +1,9 @@
+original = "cases/battery/cells/lco_graphite_energy_1p73c_296k"
+track = "pybamm_trace"
+domain = "battery"
+requires = ["echem.dfn", "echem.params.tabulated"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is PyBaMM's own output for this named model and parameter set (gt_type high-fidelity-solver). Another electrochemical code solves the same model class but with its own discretisation and model variants, and must be calibrated before its scores are trusted."
+figure = true
+[shared_inputs]
+"parameters" = "parameters/Ai2020"

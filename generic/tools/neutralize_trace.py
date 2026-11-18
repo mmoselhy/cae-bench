@@ -142,17 +142,20 @@ def battery(case_dir, param_sentence):
     env_md = f"- The parameter set is PyBaMM's `{ps}`. " + env.replace("\n", " ").replace("The parameter set named above", "It") + "\n"
     low = text.lower()
     req = []
-    if "single representative particle" in low or "single particle" in low:
-        req.append("echem.spme" if "electrolyte" in low else "echem.spm")
-    else:
+    if "resolve each electrode **through its thickness**" in low:
         req.append("echem.dfn")
+    elif "single representative particle" in low:
+        req.append("echem.spme" if "still\nsolving lithium transport in the electrolyte" in low
+                   or "solving lithium transport in the electrolyte" in low.replace("\n", " ") else "echem.spm")
+    else:
+        raise SystemExit(f"{rel}: cannot tell which cell model the prompt requires")
     if spec["kind"] == "thermal" or "lumped" in low or "thermal model" in low:
         req.append("echem.thermal.lumped")
     if "sei" in low or "solid-electrolyte interphase" in low:
         req.append("echem.aging.sei")
     if "plating" in low:
         req.append("echem.aging.plating")
-    req.append("echem.params.bpx")
+    req.append("echem.params.tabulated")
     reason = ("The reference is PyBaMM's own output for this named model and parameter set (gt_type "
               "high-fidelity-solver). Another electrochemical code solves the same model class but with "
               "its own discretisation and model variants, and must be calibrated before its scores are "
@@ -163,7 +166,8 @@ def battery(case_dir, param_sentence):
                   "and may not exist at all.")
     write(rel, prompt, env_md, {"track": "pybamm_trace", "domain": "battery", "requires": req,
                                 "portability": "portable-after-calibration", "reason": reason,
-                                "figure": figure})
+                                "figure": figure,
+                                "shared_inputs": {"parameters": f"parameters/{ps}"}})
 
 
 if __name__ == "__main__":

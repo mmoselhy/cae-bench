@@ -1,0 +1,27 @@
+{
+  "source": "OpenFOAM polyMesh",
+  "format": "Gmsh MSH 2.2 ASCII",
+  "n_points": 29152,
+  "n_hex": 14336,
+  "patches": [
+    {
+      "name": "aerofoil",
+      "type": "wall",
+      "inGroups": "1(wall)",
+      "nFaces": 128
+    },
+    {
+      "name": "farfield",
+      "type": "patch",
+      "inGroups": null,
+      "nFaces": 352
+    },
+    {
+      "name": "frontBack",
+      "type": "empty",
+      "inGroups": "1(empty)",
+      "nFaces": 28672
+    }
+  ],
+  "volume_group": "fluid"
+}

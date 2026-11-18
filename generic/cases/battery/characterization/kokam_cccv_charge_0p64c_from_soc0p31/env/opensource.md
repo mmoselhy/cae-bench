@@ -1,0 +1,1 @@
+- The parameter set is PyBaMM's `Marquis2019`. It ships with the installed PyBaMM distribution and can be loaded by that exact string.

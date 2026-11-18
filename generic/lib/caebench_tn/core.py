@@ -204,6 +204,26 @@ def audit_claims(contract: Contract, submission: Path, kpi_names: list[str],
     return out
 
 
+# ── task-supplied inputs ────────────────────────────────────────────────────
+
+def plant_inputs(tests_dir: Path) -> dict[str, Any]:
+    """Put the task's neutral inputs back at the path the agent saw them at.
+
+    They are public task data (the agent had them), copied from tests/inputs,
+    never from the submission, so a submission cannot alter them. Upstream
+    oracles never read them, so this cannot move an opensource score.
+    """
+    src = tests_dir / "inputs"
+    if not src.is_dir():
+        return {"planted": False, "why": "task supplies no neutral inputs"}
+    dst = Path(os.environ.get("SIM_BENCH_INPUTS", "/tmp/agent/inputs"))
+    try:
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+        return {"planted": True, "path": str(dst)}
+    except OSError as exc:
+        return {"planted": False, "path": str(dst), "why": f"{type(exc).__name__}: {exc}"}
+
+
 # ── entry point ──────────────────────────────────────────────────────────────
 
 def verify(tests_dir: Path, submission: Path, reward_dir: Path) -> dict[str, Any]:
@@ -221,6 +241,7 @@ def verify(tests_dir: Path, submission: Path, reward_dir: Path) -> dict[str, Any
                      "native_results": contract.native_results},
         "status": "running",
     }
+    detail["inputs"] = plant_inputs(tests_dir)
     score = 0.0
     try:
         if not contract.ok:

@@ -1,0 +1,9 @@
+original = "cases/battery/characterization/a123_pulse_resistance_1p8a_soc0p51"
+track = "pybamm_trace"
+domain = "battery"
+requires = ["echem.dfn", "echem.params.tabulated"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is PyBaMM's own output for this named model and parameter set (gt_type high-fidelity-solver). Another electrochemical code solves the same model class but with its own discretisation and model variants, and must be calibrated before its scores are trusted."
+figure = true
+[shared_inputs]
+"parameters" = "parameters/Prada2013"

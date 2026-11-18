@@ -25,7 +25,7 @@ PILOTS = ["cfd/fluids/lid_driven_cavity_ghia_re1000",
 # Words that name a tool, a tool's file layout or a tool's data set. None may
 # appear in a NEUTRAL prompt (prompt.md); a profile appendix may carry them.
 TOOL_TOKENS = [
-    "openfoam", "calculix", r"\bccx\b", "gmsh", "cantera", "pybamm", "blockmesh",
+    "openfoam", "calculix", r"\bccx\b", r"gmsh(?! msh)", "cantera", "pybamm", "blockmesh",
     "simplefoam", "pimplefoam", "icofoam", "buoyant", "polymesh", "allrun", "run_case",
     r"gri30\.yaml", r"\.yaml\b", "chen2020", "ecker2015", "marquis2019", "okane2022",
     "prada2013", "ramadass2004", "mohtat2020", "ai2020", r"\bsystem/", r"\bconstant/",
@@ -223,3 +223,14 @@ def test_solution_and_tests_stay_out_of_the_agent_environment(rendered):
 def test_rendered_task_names_use_variant_namespace(rendered):
     for t in rendered.rglob("task.toml"):
         assert re.search(r'(?m)^name\s*=\s*"caebench-tn/', t.read_text()), t
+
+
+def test_inputs_are_planted_from_tests_not_submission(tmp_path, monkeypatch):
+    tests = tmp_path / "tests"
+    (tests / "inputs" / "mechanism").mkdir(parents=True)
+    (tests / "inputs" / "mechanism" / "chem.inp").write_text("ELEMENTS\nEND\n")
+    dst = tmp_path / "agent_inputs"
+    monkeypatch.setenv("SIM_BENCH_INPUTS", str(dst))
+    out = core.plant_inputs(tests)
+    assert out["planted"] and (dst / "mechanism" / "chem.inp").read_text().startswith("ELEMENTS")
+    assert core.plant_inputs(tmp_path / "nothing")["planted"] is False

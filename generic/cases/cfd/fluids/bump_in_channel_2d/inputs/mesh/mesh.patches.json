@@ -1,0 +1,45 @@
+{
+  "source": "OpenFOAM polyMesh",
+  "format": "Gmsh MSH 2.2 ASCII",
+  "n_points": 28674,
+  "n_hex": 14080,
+  "patches": [
+    {
+      "name": "inlet",
+      "type": "patch",
+      "inGroups": null,
+      "nFaces": 80
+    },
+    {
+      "name": "outlet",
+      "type": "patch",
+      "inGroups": null,
+      "nFaces": 80
+    },
+    {
+      "name": "top",
+      "type": "symmetry",
+      "inGroups": "1(symmetry)",
+      "nFaces": 176
+    },
+    {
+      "name": "wall",
+      "type": "wall",
+      "inGroups": "1(wall)",
+      "nFaces": 80
+    },
+    {
+      "name": "symLower",
+      "type": "symmetry",
+      "inGroups": "1(symmetry)",
+      "nFaces": 96
+    },
+    {
+      "name": "frontBack",
+      "type": "empty",
+      "inGroups": "1(empty)",
+      "nFaces": 28160
+    }
+  ],
+  "volume_group": "fluid"
+}

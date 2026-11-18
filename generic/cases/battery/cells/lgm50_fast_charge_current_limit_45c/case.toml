@@ -1,0 +1,9 @@
+original = "cases/battery/cells/lgm50_fast_charge_current_limit_45c"
+track = "pybamm_trace"
+domain = "battery"
+requires = ["echem.spme", "echem.thermal.lumped", "echem.params.tabulated"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is PyBaMM's own output (gt_type high-fidelity-solver): a single-particle-with-electrolyte model with a lumped thermal model, searched for the CC current at which the peak volume-averaged temperature touches 318.15 K. Another electrochemical code solves the same model class, but the limit current is a threshold crossing that amplifies small differences in heat-source terms, thermal closure and the SPMe variant, so it must be calibrated before its scores are trusted."
+figure = true
+[shared_inputs]
+"parameters" = "parameters/Chen2020"

@@ -1,0 +1,9 @@
+original = "cases/combustion/kinetics/ch4_air_idt_resume_interrupted_run"
+track = "cantera_trace"
+domain = "combustion"
+requires = ["kinetics.0d.const_volume", "kinetics.mechanism.chemkin", "native.cantera"]
+portability = "native-only"
+portability_reason = "A resume task: the handover in /tmp/agent/run/ (a results.csv whose last line is a half-written record, and a state.csv checkpoint of T, P and gri30.yaml species mass fractions) was written by an interrupted Cantera run, and the evaluator plants its own pristine copy of those files before the re-run and requires the handed-over rows back exactly. The checkpoint is plain CSV and another 0-D integrator could in principle continue from it, but restarting a different code from a foreign checkpoint mid-induction, and the reference delay being Cantera's own continuation, have not been validated for any other toolchain."
+figure = true
+[shared_inputs]
+"mechanism" = "mechanisms/gri30"

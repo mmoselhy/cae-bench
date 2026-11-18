@@ -1,0 +1,9 @@
+original = "cases/battery/degradation/lgm50_sei_fade_12_cycles_1c"
+track = "pybamm_trace"
+domain = "battery"
+requires = ["echem.spme", "echem.aging.sei", "echem.params.tabulated"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is PyBaMM's output with its specific SEI / lithium-plating submodels; other codes implement different degradation laws, so equivalence must be calibrated per tool and may not exist at all."
+figure = true
+[shared_inputs]
+"parameters" = "parameters/OKane2022"

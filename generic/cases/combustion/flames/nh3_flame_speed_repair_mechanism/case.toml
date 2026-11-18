@@ -1,0 +1,8 @@
+original = "cases/combustion/flames/nh3_flame_speed_repair_mechanism"
+track = "cantera_trace"
+domain = "combustion"
+requires = ["flame.1d.freely_propagating", "flame.transport.mixture_averaged", "kinetics.mechanism.cantera_yaml", "native.cantera"]
+portability = "native-only"
+portability_reason = "A repair task: the agent is handed a Cantera Python script whose defect is the choice of mechanism, and the fix is to pick an applicable one from the mechanism library shipped with the Cantera distribution. Supplying a neutral mechanism would hand over the answer, and another toolchain has neither the script to diagnose nor the same mechanism library to choose from, so the diagnosis being scored does not exist outside Cantera."
+figure = true
+[shared_inputs]

@@ -59,6 +59,8 @@ build there rather than assembling it at the end. Required:
    before re-running it, so the result has to come from solving again. You may
    leave meshes, solver results and logs behind; nothing you leave can affect the
    score.
+   Files the task supplies under `/tmp/agent/inputs/` are present at that same
+   path when `replay.sh` is re-run; read them from there.
 2. **The output file(s)** described above, written by `replay.sh`.{figure}
 3. **`result.json`** at the submission root:
 
@@ -231,6 +233,10 @@ def render_case(src: Path, profile: dict, out_root: Path) -> Path:
         df = dst / "tests" / "Dockerfile"
         df.write_text(re.sub(r"(?m)^FROM .*$", f"FROM {profile['domains'][case['domain']]['verifier_image']}",
                              df.read_text(encoding="utf-8"), count=1), encoding="utf-8")
+    # The same neutral inputs, for the verifier to put back at /tmp/agent/inputs
+    # before the replay (the verifier container is a different container).
+    if (dst / "environment" / "inputs").is_dir():
+        shutil.copytree(dst / "environment" / "inputs", dst / "tests" / "inputs")
     vendor(dst / "tests")
     return dst
 

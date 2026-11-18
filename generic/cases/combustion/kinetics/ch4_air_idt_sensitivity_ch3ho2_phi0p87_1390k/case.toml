@@ -1,0 +1,9 @@
+original = "cases/combustion/kinetics/ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k"
+track = "cantera_trace"
+domain = "combustion"
+requires = ["kinetics.0d.const_volume", "kinetics.sensitivity", "kinetics.mechanism.chemkin"]
+portability = "portable"
+portability_reason = "Homogeneous 0-D ignition with the mechanism supplied, the delay definition fixed (max dT/dt) and the sensitivity defined as the small-perturbation limit of d ln(tau)/d ln(k) for one named reaction; any stiff kinetics code that can scale one rate constant (or edit its pre-exponential factor in the supplied Chemkin file) reproduces both the delay and the derivative. The reference's own perturbation study spreads 0.24%, far inside the 5% band."
+figure = true
+[shared_inputs]
+"mechanism" = "mechanisms/gri30"

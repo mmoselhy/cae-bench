@@ -13,6 +13,11 @@ described in the environment section below. **Solve on this mesh.** It is the
 grid the reference solution was computed on; a different mesh answers a
 different question, and the cell-count check will show it.
 
+It is also supplied in a tool-neutral form, `/tmp/agent/inputs/mesh/mesh.msh`
+(Gmsh MSH 2.2 ASCII: hexahedra in physical group `fluid`, boundary quads in one
+physical group per patch, named as below), with the patch types (wall, inflow/outflow,
+spanwise) in `mesh.patches.json` beside it. Both forms are the same grid.
+
 Patches, as named in the supplied mesh:
 
 | patch | what it is |

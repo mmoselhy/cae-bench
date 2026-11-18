@@ -1,0 +1,1 @@
+- The parameter set is PyBaMM's `NCA_Kim2011`. It ships with the installed PyBaMM distribution and can be loaded by that exact string.

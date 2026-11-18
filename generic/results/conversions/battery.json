@@ -1,0 +1,486 @@
+{
+  "battery/cells/a123_lfp_discharge_1p15c_298k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 1.8845619598017456,
+        "neutral": 1.884550952378023,
+        "abs_diff": 1.1007423722508847e-05,
+        "rel_diff": 5.840839387242444e-06,
+        "diff_in_band_widths": 0.00011681690922558949,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.1,
+    "wall_neutral_s": 3.6
+  },
+  "battery/cells/a123_lfp_energy_0p88c_300k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "native": 6.164077036791239,
+        "neutral": 6.1645432155862405,
+        "abs_diff": 0.0004661787950013263,
+        "rel_diff": 7.562832070703638e-05,
+        "diff_in_band_widths": 0.0015125656870168017,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 2.7,
+    "wall_neutral_s": 3.6
+  },
+  "battery/cells/a123_lfp_mean_voltage_1p52c_297k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "native": 17.168484469787806,
+        "neutral": 17.168078685747016,
+        "abs_diff": 0.0004057840407902802,
+        "rel_diff": 2.363540250185493e-05,
+        "diff_in_band_widths": 0.00047270762243676516,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 4.3,
+    "wall_neutral_s": 9.7
+  },
+  "battery/cells/ecker_graphite_discharge_0p62c_293k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 0.17024940977584346,
+        "neutral": 0.17024793412211642,
+        "abs_diff": 1.4756537270455006e-06,
+        "rel_diff": 8.667599664447588e-06,
+        "diff_in_band_widths": 0.000173352410533454,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.1,
+    "wall_neutral_s": 4.0
+  },
+  "battery/cells/ecker_graphite_energy_1p12c_298k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "native": 0.6272279449065231,
+        "neutral": 0.6272252088073771,
+        "abs_diff": 2.736099146027904e-06,
+        "rel_diff": 4.362208616893926e-06,
+        "diff_in_band_widths": 8.724430376970071e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.2,
+    "wall_neutral_s": 5.4
+  },
+  "battery/cells/ecker_graphite_mean_voltage_0p84c_292k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "native": 1.6583241991107383,
+        "neutral": 1.6457805207378415,
+        "abs_diff": 0.012543678372896716,
+        "rel_diff": 0.007564068822985972,
+        "diff_in_band_widths": 0.15128175952646913,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 4.0,
+    "wall_neutral_s": 8.2
+  },
+  "battery/cells/kokam_lco_discharge_0p71c_302k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 0.8603974617406296,
+        "neutral": 0.8604589644365642,
+        "abs_diff": 6.150269593463431e-05,
+        "rel_diff": 7.148172637586714e-05,
+        "diff_in_band_widths": 0.001429635294744968,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 2.8,
+    "wall_neutral_s": 4.1
+  },
+  "battery/cells/lco_graphite_discharge_1p27c_295k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 2.3984333206449198,
+        "neutral": 2.398414927851533,
+        "abs_diff": 1.839279338655686e-05,
+        "rel_diff": 7.668669888896966e-06,
+        "diff_in_band_widths": 0.000153373610124597,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.5,
+    "wall_neutral_s": 5.5
+  },
+  "battery/cells/lco_graphite_energy_1p73c_296k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "native": 8.661484624101494,
+        "neutral": 8.661404231919821,
+        "abs_diff": 8.039218167255058e-05,
+        "rel_diff": 9.281570673098103e-06,
+        "diff_in_band_widths": 0.00018563151256494403,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.4,
+    "wall_neutral_s": 5.2
+  },
+  "battery/cells/lgm50_fast_charge_current_limit_45c": {
+    "kpis": {
+      "i_charge_max_a": {
+        "native": 7.202880859375,
+        "neutral": 7.2083740234375,
+        "abs_diff": 0.0054931640625,
+        "rel_diff": 0.0007626343083754195,
+        "diff_in_band_widths": 0.015252687987305077,
+        "neutral_inside_band": true
+      },
+      "charge_time_at_limit_s": {
+        "native": 4478.972613597955,
+        "neutral": 4477.421776740252,
+        "abs_diff": 1.5508368577029614,
+        "rel_diff": 0.0003462483456573706,
+        "diff_in_band_widths": 0.006924970954049531,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 22.1,
+    "wall_neutral_s": 55.3
+  },
+  "battery/cells/lgm50_nmc811_discharge_2p3c_288k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 4.7050082614339415,
+        "neutral": 4.705058930534432,
+        "abs_diff": 5.066910049045248e-05,
+        "rel_diff": 1.0769184170361073e-05,
+        "diff_in_band_widths": 0.00021538360381998117,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 2.6,
+    "wall_neutral_s": 3.5
+  },
+  "battery/cells/lgm50_nmc811_energy_1p6c_301k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "native": 16.625378906281945,
+        "neutral": 16.627279290076356,
+        "abs_diff": 0.0019003837944104873,
+        "rel_diff": 0.00011430619447069696,
+        "diff_in_band_widths": 0.002286120988861005,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.0,
+    "wall_neutral_s": 3.8
+  },
+  "battery/cells/lgm50_nmc811_mean_voltage_0p78c_294k": {
+    "kpis": {
+      "rate_capacity_loss_pct": {
+        "native": 3.219267335625478,
+        "neutral": 3.21726603884021,
+        "abs_diff": 0.0020012967852678365,
+        "rel_diff": 0.0006216621909963251,
+        "diff_in_band_widths": 0.012433233529761943,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.9,
+    "wall_neutral_s": 6.9
+  },
+  "battery/cells/nca_graphite_discharge_0p93c_299k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 0.4765674098914032,
+        "neutral": 0.4765736896286743,
+        "abs_diff": 6.279737271075447e-06,
+        "rel_diff": 1.3177017858830147e-05,
+        "diff_in_band_widths": 0.0002635405838455221,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.1,
+    "wall_neutral_s": 3.8
+  },
+  "battery/cells/nmc_pouch_discharge_1p8c_303k": {
+    "kpis": {
+      "discharge_capacity_Ah": {
+        "native": 4.786355503228657,
+        "neutral": 4.786379407857033,
+        "abs_diff": 2.3904628375426284e-05,
+        "rel_diff": 4.994327805216581e-06,
+        "diff_in_band_widths": 9.988646226120177e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.1,
+    "wall_neutral_s": 4.4
+  },
+  "battery/cells/nmc_pouch_energy_2p4c_299k": {
+    "kpis": {
+      "discharge_energy_Wh": {
+        "native": 16.956181966353707,
+        "neutral": 16.963782971383427,
+        "abs_diff": 0.007601005029719943,
+        "rel_diff": 0.0004482733816376045,
+        "diff_in_band_widths": 0.008965458097592555,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.3,
+    "wall_neutral_s": 4.6
+  },
+  "battery/characterization/a123_cccv_charge_1p1c_from_soc0p26": {
+    "kpis": {
+      "charge_time_s": {
+        "native": 2612.2173443013617,
+        "neutral": 2612.221436178306,
+        "abs_diff": 0.00409187694413049,
+        "rel_diff": 1.5664381652840087e-06,
+        "diff_in_band_widths": 3.132873145547075e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.1,
+    "wall_neutral_s": 5.2
+  },
+  "battery/characterization/a123_pulse_resistance_1p8a_soc0p51": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.031714885678117234,
+        "neutral": 0.03171506748377221,
+        "abs_diff": 1.8180565497516454e-07,
+        "rel_diff": 5.732502296251617e-06,
+        "diff_in_band_widths": 0.00011464999415111796,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.3,
+    "wall_neutral_s": 5.0
+  },
+  "battery/characterization/kokam_cccv_charge_0p64c_from_soc0p31": {
+    "kpis": {
+      "charge_time_s": {
+        "native": 6548.93314681742,
+        "neutral": 6550.256747647988,
+        "abs_diff": 1.3236008305684663,
+        "rel_diff": 0.00020210938192454991,
+        "diff_in_band_widths": 0.004042306857711456,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 4.2,
+    "wall_neutral_s": 6.6
+  },
+  "battery/characterization/kokam_pulse_resistance_1p2a_soc0p47": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.1010105870104272,
+        "neutral": 0.10102102411877738,
+        "abs_diff": 1.0437108350178081e-05,
+        "rel_diff": 0.00010332687551950046,
+        "diff_in_band_widths": 0.002066529061226615,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.5,
+    "wall_neutral_s": 5.4
+  },
+  "battery/characterization/lco_graphite_pulse_resistance_0p9a_soc0p66": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.044372831159761934,
+        "neutral": 0.04438519981205196,
+        "abs_diff": 1.236865229002626e-05,
+        "rel_diff": 0.00027874381613139827,
+        "diff_in_band_widths": 0.005574880237454594,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 2.9,
+    "wall_neutral_s": 4.4
+  },
+  "battery/characterization/lgm50_cccv_charge_1p52c_from_soc0p12": {
+    "kpis": {
+      "charge_time_s": {
+        "native": 6711.393993632784,
+        "neutral": 6711.575329237153,
+        "abs_diff": 0.18133560436854168,
+        "rel_diff": 2.701906705828594e-05,
+        "diff_in_band_widths": 0.0005403558984775614,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.8,
+    "wall_neutral_s": 5.4
+  },
+  "battery/characterization/lgm50_pulse_resistance_5a_soc0p62": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.023464649897434596,
+        "neutral": 0.02346645165590173,
+        "abs_diff": 1.8017584671355114e-06,
+        "rel_diff": 7.67860792729108e-05,
+        "diff_in_band_widths": 0.0015357248511677262,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.5,
+    "wall_neutral_s": 5.4
+  },
+  "battery/characterization/nca_cccv_charge_0p79c_from_soc0p35": {
+    "kpis": {
+      "charge_time_s": {
+        "native": 3708.054947419096,
+        "neutral": 3708.267920317903,
+        "abs_diff": 0.2129728988070383,
+        "rel_diff": 5.7435205741833206e-05,
+        "diff_in_band_widths": 0.001148705647480688,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.7,
+    "wall_neutral_s": 5.7
+  },
+  "battery/characterization/nca_pulse_resistance_0p6a_soc0p74": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.0227243495627875,
+        "neutral": 0.022726243615442954,
+        "abs_diff": 1.8940526554551973e-06,
+        "rel_diff": 8.334903712961815e-05,
+        "diff_in_band_widths": 0.0016669843783572627,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.5,
+    "wall_neutral_s": 4.3
+  },
+  "battery/characterization/nmc_pouch_cccv_charge_1p3c_from_soc0p23": {
+    "kpis": {
+      "charge_time_s": {
+        "native": 3366.0516647941977,
+        "neutral": 3366.0831862527443,
+        "abs_diff": 0.03152145854664923,
+        "rel_diff": 9.364520121997731e-06,
+        "diff_in_band_widths": 0.0001872904950707757,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.6,
+    "wall_neutral_s": 5.8
+  },
+  "battery/characterization/nmc_pouch_pulse_resistance_4p1a_soc0p55": {
+    "kpis": {
+      "pulse_resistance_ohm": {
+        "native": 0.008515761140472434,
+        "neutral": 0.00851629436467858,
+        "abs_diff": 5.332242061454467e-07,
+        "rel_diff": 6.261615343004615e-05,
+        "diff_in_band_widths": 0.0012523232363181834,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.7,
+    "wall_neutral_s": 5.6
+  },
+  "battery/degradation/lgm50_plating_fade_9_cycles_1p3c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "native": 22.71162850406788,
+        "neutral": 22.619378152617312,
+        "abs_diff": 0.09225035145056637,
+        "rel_diff": 0.004061811394724223,
+        "diff_in_band_widths": 0.08123561448283831,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 6.7,
+    "wall_neutral_s": 46.9
+  },
+  "battery/degradation/lgm50_sei_fade_12_cycles_1c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "native": 0.32798180941457944,
+        "neutral": 0.3286203428037541,
+        "abs_diff": 0.0006385333891746336,
+        "rel_diff": 0.0019468561086188384,
+        "diff_in_band_widths": 0.03892724851322961,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 6.1,
+    "wall_neutral_s": 35.8
+  },
+  "battery/degradation/lgm50_sei_plating_fade_10_cycles_1p5c": {
+    "kpis": {
+      "capacity_fade_pct": {
+        "native": 0.5291490023844366,
+        "neutral": 0.523370444799657,
+        "abs_diff": 0.005778557584779631,
+        "rel_diff": 0.010920473361454816,
+        "diff_in_band_widths": 0.21845611961301806,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 8.9,
+    "wall_neutral_s": 67.6
+  },
+  "battery/thermal/lco_graphite_thermal_rise_2p35c_299k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "native": 9.933313551420497,
+        "neutral": 9.93303674707704,
+        "abs_diff": 0.00027680434345711546,
+        "rel_diff": 2.786626456763076e-05,
+        "diff_in_band_widths": 0.0005573254906111165,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.4,
+    "wall_neutral_s": 4.8
+  },
+  "battery/thermal/lgm50_okane_thermal_rise_1p85c_292k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "native": 31.36791783839908,
+        "neutral": 31.346136970256623,
+        "abs_diff": 0.021780868142457166,
+        "rel_diff": 0.0006943676738337438,
+        "diff_in_band_widths": 0.01388736137418008,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 4.9,
+    "wall_neutral_s": 17.0
+  },
+  "battery/thermal/lgm50_thermal_rise_0p91c_303k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "native": 11.335160192725425,
+        "neutral": 11.328521936038157,
+        "abs_diff": 0.006638256687267585,
+        "rel_diff": 0.0005856341308284134,
+        "diff_in_band_widths": 0.011712641483639609,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 4.5,
+    "wall_neutral_s": 9.8
+  },
+  "battery/thermal/nmc_pouch_thermal_rise_2p7c_305k": {
+    "kpis": {
+      "max_temperature_rise_K": {
+        "native": 8.448254785156507,
+        "neutral": 8.44307601216667,
+        "abs_diff": 0.005178772989836489,
+        "rel_diff": 0.0006129991485265734,
+        "diff_in_band_widths": 0.012259989914684079,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.2,
+    "wall_neutral_s": 4.6
+  }
+}

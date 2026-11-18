@@ -145,11 +145,11 @@ is instead a tabulated data sheet (`caebench-tn-cell-datasheet-v1`: scalars with
 units, every functional parameter tabulated on stated grids), proven by
 re-solving every battery oracle from it. It is an interpolation, so the proof
 measures a small KPI difference rather than floating-point identity; see
-`generic/results/conversions/battery.json`. (b) Mechanisms: Chemkin via
-`write_chemkin`, proven by `ck2yaml` back and re-solving the oracle. (c) Meshes:
+`generic/results/conversions/battery.json`. Measured: all 35 KPIs of the 34 battery tasks stay inside their bands; largest shift 0.22 band widths (SEI+plating capacity fade), next 0.15 (Ecker rate-capacity loss, after geometric sto grids fixed a 32 mV OCP error near sto=0). (b) Mechanisms: Chemkin via
+`write_chemkin`, proven by `ck2yaml` back and re-solving the oracle: 19/21 tasks, all inside the band, largest shift 0.014 band widths; the two native-only tasks (mechanism repair, resume from planted partial output) have no single-file oracle to redirect and keep their native inputs. (c) Meshes:
 MSH 2.2 written directly from the polyMesh (CGNS skipped: meshio's CGNS writer
 carries no boundary patches), proven by `gmshToFoam` back and a Harbor oracle run
-on the round-tripped grid. Native originals are always kept, and the
+on the round-tripped grid: naca0012 and bump both score 1.0, KPIs within 3e-8 rel. (the precision printed in results.csv). Native originals are always kept, and the
 `opensource` profile keeps using them, so no conversion can move a parity score.
 
 ## 8. Calibration tool

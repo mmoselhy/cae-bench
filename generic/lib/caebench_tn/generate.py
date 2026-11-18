@@ -101,10 +101,17 @@ exec python3 -m caebench_tn.verify "$HERE"
 
 SOLVE_SH = """#!/usr/bin/env bash
 # CAE-bench-TN oracle: the UNCHANGED upstream oracle, then the neutral contract.
-set -euo pipefail
+# The upstream oracle's exit status is kept as is: a few upstream oracles exit
+# non-zero in the agent phase (e.g. sourcing the OpenFOAM bashrc under set -u)
+# while leaving a complete case the evaluator replays, so the contract is
+# written whenever a submission exists, exactly as upstream scores it.
+set -uo pipefail
 HERE="$(dirname "$(realpath "$0")")"
-bash "$HERE/solve_original.sh"
-python3 "$HERE/tn_oracle_finish.py"
+bash "$HERE/solve_original.sh"; rc=$?
+if [ -d "${SIM_BENCH_SUBMISSION:-${AGENT_WORKDIR:-/tmp/agent}/submission}" ]; then
+    python3 "$HERE/tn_oracle_finish.py" || { [ "$rc" != 0 ] || rc=1; }
+fi
+exit "$rc"
 """
 
 

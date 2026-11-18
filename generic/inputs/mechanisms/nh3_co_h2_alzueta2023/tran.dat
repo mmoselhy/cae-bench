@@ -1,0 +1,59 @@
+! generator: yaml2ck
+! cantera-version: 3.2.0
+! date: Wed, 18 Nov 2026 17:23:35 +0000
+! input-files: ['baseline']
+!
+! A variation of the 2023 model of NH3 and H2 chemistry published by Alzueta and coworkers, with the original version
+! denoted below as "baseline". [1] In the modified version, "linear-Burke", six complex-forming reactions have been
+! modified according to the linear Burke rate implementation of the reduced-pressure linear mixture rule (LMR-R). These
+! are: H2O (+M), HO2 (+M), H2O2 (+M), NH3 (+M), N2H4 (+M), and HNO (+M). Ab initio third-body efficiencies were obtained
+! at discrete temperatures from Jasper [2] and then fitted to an Arrhenius parameterization to facilitate the
+! temperature dependence of these parameters. Further description of the methodology used to adapt this mechanism is
+! available in Singal et al. [3]  References:    [1] M. U. Alzueta, I. Salas, H. Hashemi, P. Glarborg, CO-assisted NH3
+! oxidation,   Combust. Flame 257 (2023) 112438.    [2] A. W. Jasper, Predicting third-body collision efficiencies for
+! water and other   polyatomic baths. Faraday Discuss. 238 (2022) 68-86.    [3] P. J. Singal, J. Lee, L. Lei, R. L.
+! Speth, M. P. Burke, Implementation of New   Mixture Rules Has a Substantial Impact on Combustion Predictions for H2
+! and NH3,   Proc. Combust. Inst. 40 (2024).
+
+NH3                2   481.000     2.920     1.470     0.000    10.000
+NO2                2   333.590     3.852     0.400     0.000     1.000 ! CJP
+NO                 1   139.320     3.339     0.200     1.760     4.000 ! CJP
+N2O                1   232.400     3.828     0.000     0.000     1.000 ! *
+H2                 1    38.000     2.920     0.000     0.790   280.000
+O2                 1   107.400     3.458     0.000     1.600     3.800
+O3                 2   180.000     4.100     0.000     0.000     2.000
+H                  0   145.000     2.050     0.000     0.000     0.000
+O                  0    80.000     2.750     0.000     0.000     0.000
+OH                 1    80.000     2.750     0.000     0.000     0.000
+HO2                2   107.400     3.458     0.000     0.000     1.000 ! *
+H2O                2   572.400     2.605     1.844     0.000     4.000
+H2O2               2   107.400     3.458     0.000     0.000     3.800
+CO                 1    98.100     3.650     0.000     1.950     1.800
+CO2                1   244.000     3.763     0.000     2.650     2.100
+HOCO               2   498.000     3.590     0.000     0.000     2.000 ! WKM =OCHO LLNL
+CH2O               2   498.000     3.590     0.000     0.000     2.000
+HCO                2   498.000     3.590     0.000     0.000     0.000
+NH2                2    80.000     2.650     0.000     2.260     4.000
+NH                 1    80.000     2.650     0.000     0.000     4.000
+N                  0    71.400     3.298     0.000     0.000     0.000 ! *
+NNH                2    71.400     3.798     0.000     0.000     1.000 ! *
+N2H4               2   205.000     4.230     0.000     4.260     1.500
+N2H3               2   200.000     3.900     0.000     0.000     1.000 ! *
+tHNNH              2    71.400     3.798     0.000     0.000     1.000 ! = N2H2
+cHNNH              2    71.400     3.798     0.000     0.000     1.000 ! = N2H2
+H2NN               2    71.400     3.798     0.000     0.000     1.000 ! = N2H2
+NH2OH              2   116.700     3.492     0.000     0.000     1.000 ! = NHOH
+H2NO               2   116.700     3.492     0.000     0.000     1.000 ! JAM
+HNOH               2   116.700     3.492     0.000     0.000     1.000 ! JAM
+HNO                2   170.000     3.430     1.620     0.000     1.000 ! CJP
+HON                2   116.700     3.492     0.000     0.000     1.000 ! = HNO
+HONO               2   350.000     3.950     1.639     0.000     1.000 ! CJP
+HNO2               2   350.000     3.950     1.639     0.000     1.000 ! = HONO
+NO3                2   400.000     4.200     0.200     0.000     1.000 ! CJP
+HONO2              2   400.000     4.200     0.200     0.000     1.000 ! = NO3
+H2NCO              2   307.800     4.140     0.000     0.000     1.000 ! = c3h6
+HNCO               2   232.400     3.828     0.000     0.000     1.000 ! OIS
+NCO                1   232.400     3.828     0.000     0.000     1.000 ! OIS
+AR                 0   136.500     3.330     0.000     0.000     0.000
+HE                 0    10.200     2.576     0.000     0.000     0.000 ! *
+N2                 1    97.530     3.621     0.000     1.760     4.000

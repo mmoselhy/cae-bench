@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/channel_developing_entry"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.steady", "mesh.structured.block"]
+portability = "portable-after-calibration"
+portability_reason = "Fully specified laminar entrance flow, but gt_value (1.2465) is calibrated from this repo's OpenFOAM oracle at its own mesh and sampling station, with no published value behind it; a converged solver should agree within 5%, but no non-OpenFOAM run has confirmed it."
+figure = false

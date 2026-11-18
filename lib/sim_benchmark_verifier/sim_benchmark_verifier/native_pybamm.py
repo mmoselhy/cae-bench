@@ -478,8 +478,20 @@ def is_reproduction_input(path: Path) -> bool:
     return path.suffix.lower() in _REPRODUCTION_KEEP_SUFFIXES
 
 
+def _driver_argv(driver: str) -> list[str]:
+    """How the reproduction launches `driver`.
+
+    The default `run_case.py` runs under this interpreter exactly as before. A
+    different entry point is accepted only for the tool-neutral variant
+    (`generic/`), whose contract names a shell `replay.sh`; it changes nothing
+    about what is stripped, gated or scored.
+    """
+    return [sys.executable, driver] if driver.endswith(".py") else ["bash", driver]
+
+
 def _reproduce(submission: Path, workdir: Path, spec: PyBaMMSpec,
-               log_dir: Path) -> dict[str, Any]:
+               log_dir: Path,
+               driver: str = DRIVER_NAME) -> dict[str, Any]:
     """Re-execute the submission's own driver in a clean copy of the case.
 
     The copy carries only source; every numeric artifact the submission
@@ -509,17 +521,20 @@ def _reproduce(submission: Path, workdir: Path, spec: PyBaMMSpec,
         "stripped_submitted_artifacts": removed,
         "stripped_files": sorted(stripped)[:20],
     }
-    driver = workdir / DRIVER_NAME
-    if not driver.is_file():
+    if driver != DRIVER_NAME and (submission / driver).is_file():
+        # A non-default entry point is source by definition, whatever its suffix.
+        shutil.copy2(submission / driver, workdir / driver)
+    driver_path = workdir / driver
+    if not driver_path.is_file():
         raise ReproductionFailed(
-            f"submission has no {DRIVER_NAME} to reproduce",
+            f"submission has no {driver} to reproduce",
             failure_kind=DRIVER_MISSING,
             **stripping,
         )
     log_dir.mkdir(parents=True, exist_ok=True)
     try:
         run = run_driver(
-            [sys.executable, DRIVER_NAME],
+            _driver_argv(driver),
             cwd=workdir,
             timeout_s=spec.reproduction_timeout_s,
             log_path=log_dir / "evaluator_reproduction.log",
@@ -529,7 +544,7 @@ def _reproduce(submission: Path, workdir: Path, spec: PyBaMMSpec,
         raise
     if not (workdir / RESULTS_NAME).is_file():
         raise ReproductionFailed(
-            f"{DRIVER_NAME} did not produce {RESULTS_NAME}",
+            f"{driver} did not produce {RESULTS_NAME}",
             failure_kind=RESULTS_MISSING,
             **{k: v for k, v in run.items() if k not in ("stdout", "stderr")},
             **stripping,
@@ -551,6 +566,7 @@ def evaluate(
     submission: Path,
     kpis: dict[str, Any],
     reward_dir: Path,
+    driver: str = DRIVER_NAME,
 ) -> dict[str, Any]:
     """Run the full lifecycle, recording every dimension independently."""
     import numpy as np
@@ -579,7 +595,7 @@ def evaluate(
         workdir = Path(tmp) / "case"
         repro = rec.run(
             "clean_reproduction",
-            lambda: (1.0, _reproduce(submission, workdir, spec, reward_dir)),
+            lambda: (1.0, _reproduce(submission, workdir, spec, reward_dir, driver)),
         )
 
         # 1. Raw trace, as produced by the re-run. `_reproduce` already refuses
@@ -1032,7 +1048,7 @@ EXTRACTORS: dict[str, Callable[[dict[str, list[float]], PyBaMMSpec], dict[str, A
 }
 
 
-def main_from_case(case_tests_dir: Path) -> int:
+def main_from_case(case_tests_dir: Path, driver: str = DRIVER_NAME) -> int:
     """Entry point used by every case's ``tests/verify_native.py``.
 
     The case supplies only ``spec.json`` + ``kpis.json``; all behaviour above
@@ -1046,6 +1062,7 @@ def main_from_case(case_tests_dir: Path) -> int:
     detail = evaluate(
         spec, EXTRACTORS[spec.kind],
         submission=submission, kpis=kpis, reward_dir=reward_dir,
+        driver=driver,
     )
     print(json.dumps({"score": detail["final_score"],
                       "dimensions": {k: v["status"] for k, v in detail["dimensions"].items()}},

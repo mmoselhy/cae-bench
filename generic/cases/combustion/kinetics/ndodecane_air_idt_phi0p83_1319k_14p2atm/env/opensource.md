@@ -1,0 +1,1 @@
+- The reaction mechanism is Cantera's `nDodecane_Reitz.yaml` (gas phase `nDodecane_IG`). It ships with the installed Cantera distribution and can be loaded by that exact string. The Chemkin files under `/tmp/agent/inputs/mechanism/` were exported from it with Cantera's `write_chemkin`.

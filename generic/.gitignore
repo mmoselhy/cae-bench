@@ -1,0 +1,7 @@
+# Rendered datasets and raw Harbor jobs are regenerated, not versioned.
+dist/
+results/jobs/
+results/negative_tasks/
+results/agent_jobs/
+__pycache__/
+*.pyc

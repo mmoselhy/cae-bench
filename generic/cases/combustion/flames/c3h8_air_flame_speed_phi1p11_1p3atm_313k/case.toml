@@ -1,0 +1,9 @@
+original = "cases/combustion/flames/c3h8_air_flame_speed_phi1p11_1p3atm_313k"
+track = "cantera_trace"
+domain = "combustion"
+requires = ["flame.1d.freely_propagating", "flame.transport.mixture_averaged", "kinetics.mechanism.chemkin"]
+portability = "portable-after-calibration"
+portability_reason = "Freely propagating 1-D flame with mixture-averaged transport and the mechanism supplied; the reference is Cantera's grid-converged value. Codes differ in mixture-averaged details (correction velocity, thermal diffusion) by around 1-3%, inside the 5% band but close enough that another code should be calibrated before its scores are trusted."
+figure = true
+[shared_inputs]
+"mechanism" = "mechanisms/gri30"

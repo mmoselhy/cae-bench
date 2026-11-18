@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/channel_retau395_repair_closure"
+track = "csv_interface"
+domain = "cfd"
+requires = ["native.openfoam", "cfd.incompressible.rans.komegasst", "mesh.structured.block"]
+portability = "native-only"
+portability_reason = "A repair task: the thing to fix is a shipped OpenFOAM case (laminar closure set on a Re_tau=395 channel) whose fixed iteration budget is part of the problem, so it cannot be posed to another tool without rewriting it into a different task; the Moser-Kim-Mansour reference itself (Ub/u_tau = 17.5) is tool-neutral."
+figure = false

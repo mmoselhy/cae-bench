@@ -1,0 +1,24 @@
+# Profile: Altair (OptiStruct) -- STUB. Adapter untested; scores 0 as "unverified".
+name = "altair"
+status = "stub"
+label = "Altair OptiStruct (thermal, thermo-mechanical) -- adapter untested"
+inherit_images = false
+
+provides = [
+  "mesh.import.gmsh",
+  "mesh.unstructured.gmsh",
+  "fea.thermal.steady",
+  "fea.thermomech.static",
+  "fea.orthotropic_conductivity",
+]
+
+[domains.packaging]
+solvers = ["optistruct"]
+docker_image = "TODO-altair-optistruct-image"
+verifier_image = "TODO-altair-optistruct-image"
+appendix = """
+## Environment (profile: altair)
+
+TODO: OptiStruct version and batch invocation. In `result.json`, use
+`"solver": {"name": "optistruct", "version": "<version>"}`.
+"""

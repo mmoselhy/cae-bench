@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/naca0012_subsonic"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.rans.sa", "mesh.import.polymesh"]
+portability = "portable-after-calibration"
+portability_reason = "CL's reference is the published CFL3D-SA mean on this grid, but CD's gt_value is bit-identical to this repo's OpenFOAM oracle, which sits 14.5% below the published CFL3D-SA drag on the same grid; a solver that reproduces CFL3D's SA would therefore fail CD's 5% band, and the grid ships only in polyMesh format."
+figure = false

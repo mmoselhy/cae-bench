@@ -1,0 +1,9 @@
+{
+  "exported_from": "h2o2.yaml",
+  "phase": null,
+  "cantera_version": "3.2.0",
+  "n_species": 10,
+  "n_reactions": 29,
+  "transport": "mixture-averaged",
+  "method": "cantera.Solution.write_chemkin"
+}

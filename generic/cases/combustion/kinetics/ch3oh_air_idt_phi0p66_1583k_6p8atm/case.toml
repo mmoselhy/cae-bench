@@ -1,0 +1,9 @@
+original = "cases/combustion/kinetics/ch3oh_air_idt_phi0p66_1583k_6p8atm"
+track = "cantera_trace"
+domain = "combustion"
+requires = ["kinetics.0d.const_volume", "kinetics.mechanism.chemkin"]
+portability = "portable"
+portability_reason = "Homogeneous 0-D ignition with the mechanism supplied and the delay definition fixed (max dT/dt); the reference is the Cantera oracle's value, but any stiff kinetics integrator with the same mechanism reproduces it far inside a 5% band."
+figure = true
+[shared_inputs]
+"mechanism" = "mechanisms/gri30"

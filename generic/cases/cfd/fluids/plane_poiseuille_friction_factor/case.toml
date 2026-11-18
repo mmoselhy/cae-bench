@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/plane_poiseuille_friction_factor"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.steady", "mesh.structured.block"]
+portability = "portable"
+portability_reason = "Closed-form Poiseuille profile and an analytical target (observed order 2.0, absolute band 0.25); any genuinely second-order solver converged to its residual floor on the three prescribed grids hits it whatever its code."
+figure = false

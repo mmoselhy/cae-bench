@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/taylor_green_vortex_2d_re100"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.transient", "mesh.structured.block"]
+portability = "portable"
+portability_reason = "Exact Taylor-Green solution: the reference exp(-0.1) = 0.904837 is analytical, the oracle lands 0.6% from it, and any transient incompressible solver with periodic boundaries and adequate space/time resolution should sit inside the 5% band."
+figure = false

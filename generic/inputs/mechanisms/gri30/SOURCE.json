@@ -1,0 +1,9 @@
+{
+  "exported_from": "gri30.yaml",
+  "phase": null,
+  "cantera_version": "3.2.0",
+  "n_species": 53,
+  "n_reactions": 325,
+  "transport": "mixture-averaged",
+  "method": "cantera.Solution.write_chemkin"
+}

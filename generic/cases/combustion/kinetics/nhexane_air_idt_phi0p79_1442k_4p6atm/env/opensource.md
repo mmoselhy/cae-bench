@@ -1,0 +1,1 @@
+- The reaction mechanism is Cantera's `example_data/n-hexane-NUIG-2015.yaml`. It ships with the installed Cantera distribution and can be loaded by that exact string. The Chemkin files under `/tmp/agent/inputs/mechanism/` were exported from it with Cantera's `write_chemkin`.

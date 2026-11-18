@@ -1,0 +1,7 @@
+original = "cases/packaging/thermal/pkg25d_thermal_tim118um_k4p7_h22600"
+track = "csv_interface"
+domain = "packaging"
+requires = ["fea.thermal.steady", "fea.orthotropic_conductivity", "mesh.unstructured.gmsh"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is the CalculiX oracle's own answer on a structured hex grid (gt_type high-fidelity-solver), not a published value. Temperature maxima depend on element technology and mesh; another FE code may land inside the band, but that must be measured with that code (calibrate) before its scores are trusted."
+figure = false

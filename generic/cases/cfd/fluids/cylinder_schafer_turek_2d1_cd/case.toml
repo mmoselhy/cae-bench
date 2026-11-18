@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/cylinder_schafer_turek_2d1_cd"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.steady"]
+portability = "portable"
+portability_reason = "Fully specified steady laminar Re=20 problem; the reference is the published Schaefer-Turek / FeatFlow DFG 2D-1 committee value cD = 5.5795, not an OpenFOAM output, and the oracle lands 0.11% from it, so any converged incompressible solver should sit well inside the 5% band."
+figure = false

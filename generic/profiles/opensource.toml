@@ -1,0 +1,103 @@
+# Profile: the open-source toolchain CAE-bench ships with.
+#
+# This profile is the parity reference: rendered with it, every task must give
+# the same oracle score and KPI values as the original CAE-bench task (gates
+# B-E). Its images, timeouts and verifier images are therefore the original
+# cases' own, untouched; only the prompt, the deliverable names and the
+# verifier entry point change.
+name = "opensource"
+status = "tested"
+label = "Open-source solvers as in CAE-bench: OpenFOAM v2412, CalculiX 2.17 + Gmsh, Cantera 3.2.0, PyBaMM 26.7.1.0"
+# Images: keep each original case's own task.toml / tests/Dockerfile values.
+inherit_images = true
+
+provides = [
+  "cfd.incompressible.laminar.steady",
+  "cfd.incompressible.laminar.transient",
+  "cfd.incompressible.rans.sa",
+  "cfd.incompressible.rans.kepsilon",
+  "cfd.incompressible.rans.komegasst",
+  "cfd.incompressible.les",
+  "cfd.heat.boussinesq",
+  "cfd.compressible.rans",
+  "mesh.structured.block",
+  "mesh.import.polymesh",
+  "mesh.import.gmsh",
+  "mesh.unstructured.gmsh",
+  "fea.thermal.steady",
+  "fea.thermomech.static",
+  "fea.orthotropic_conductivity",
+  "kinetics.0d.const_volume",
+  "kinetics.0d.const_pressure",
+  "kinetics.sensitivity",
+  "kinetics.mechanism.cantera_yaml",
+  "kinetics.mechanism.chemkin",
+  "flame.1d.freely_propagating",
+  "flame.transport.mixture_averaged",
+  "flame.transport.unity_lewis",
+  "echem.spme",
+  "echem.spm",
+  "echem.dfn",
+  "echem.thermal.lumped",
+  "echem.aging.sei",
+  "echem.aging.plating",
+  "echem.params.pybamm",
+  "echem.params.bpx",
+  "native.openfoam",
+  "native.cantera",
+]
+
+[domains.cfd]
+solvers = ["openfoam"]
+appendix = """
+## Environment (profile: opensource)
+
+- OpenFOAM ESI v2412 is installed and its environment is available on the shell.
+  Python 3 is available, with Gmsh, meshio, PyVista, NumPy, SciPy and Matplotlib.
+- Your submission must contain the OpenFOAM case inputs themselves -- `0/`,
+  `constant/` and `system/` -- as for any reproducible OpenFOAM case (at the
+  submission root, or one directory per configuration).
+- The rerun of `replay.sh` must leave OpenFOAM's own output behind in the
+  evaluator's copy: a serialised `constant/polyMesh/` and a non-zero time
+  directory holding a solved field. A `results.csv` whose numbers did not come out
+  of a solve scores zero however close they are.
+- In `result.json`, use `"solver": {"name": "openfoam", "version": "v2412"}`.
+"""
+
+[domains.packaging]
+solvers = ["calculix"]
+appendix = """
+## Environment (profile: opensource)
+
+- CalculiX (`ccx`) and Gmsh are installed and on `PATH`, and Python 3 is available.
+- The score gates on the artifact as well as on the number: the rerun of
+  `replay.sh` has to leave CalculiX's own result output (`.frd`) behind. A
+  `results.csv` whose numbers did not come out of a solve scores zero however
+  close they are.
+- In `result.json`, use `"solver": {"name": "calculix", "version": "2.17"}`.
+"""
+
+[domains.combustion]
+solvers = ["cantera"]
+appendix = """
+## Environment (profile: opensource)
+
+- Cantera 3.2.0 is installed for Python 3, with NumPy, SciPy and Matplotlib.
+- The evaluator copies only source files into a clean working copy -- `replay.sh`
+  itself, `.py` files, and mechanism/input files (`.yaml`/`.yml` holding a mechanism,
+  `.cti`, `.xml`, `.inp`, `.txt`, `.cfg`) -- and strips every numeric artifact before
+  running `replay.sh`. Anything else `replay.sh` needs, it must generate.
+- In `result.json`, use `"solver": {"name": "cantera", "version": "3.2.0"}`.
+"""
+
+[domains.battery]
+solvers = ["pybamm"]
+appendix = """
+## Environment (profile: opensource)
+
+- PyBaMM 26.7.1.0 is installed for Python 3, with NumPy, SciPy, pandas and Matplotlib.
+- The evaluator copies only source files into a clean working copy -- `replay.sh`
+  itself and `.py`, `.txt`, `.cfg` files -- and strips every numeric artifact before
+  running `replay.sh`. Anything else `replay.sh` needs, it must generate.
+- In `result.json`, use `"solver": {"name": "pybamm", "version": "26.7.1.0"}`.
+"""

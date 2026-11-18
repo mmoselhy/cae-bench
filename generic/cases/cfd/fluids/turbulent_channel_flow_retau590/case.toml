@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/turbulent_channel_flow_retau590"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.rans.komegasst", "mesh.structured.block"]
+portability = "portable"
+portability_reason = "The reference is derived from the Moser-Kim-Mansour chan590 DNS profile (Ub/u_tau = 18.654), not an OpenFOAM output; wall-resolved k-omega SST lands 0.65% from it and the worst calibration grid within 1.7%, so another code's standard SST should sit inside the 5% band."
+figure = false

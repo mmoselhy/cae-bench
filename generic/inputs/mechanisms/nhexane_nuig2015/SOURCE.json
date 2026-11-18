@@ -1,0 +1,9 @@
+{
+  "exported_from": "example_data/n-hexane-NUIG-2015.yaml",
+  "phase": null,
+  "cantera_version": "3.2.0",
+  "n_species": 1268,
+  "n_reactions": 5336,
+  "transport": null,
+  "method": "cantera.Solution.write_chemkin"
+}

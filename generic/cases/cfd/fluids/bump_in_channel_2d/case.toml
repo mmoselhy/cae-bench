@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/bump_in_channel_2d"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.rans.komegasst", "mesh.import.polymesh"]
+portability = "portable"
+portability_reason = "gt_value is the mean of the published CFL3D and FUN3D k-omega SST drag on NASA's own 177x81 grid, and five independent codes/runs sit within 1.7% of it against a 10% band; the only tie to OpenFOAM is that the grid is shipped in polyMesh format, so another tool must import or convert it."
+figure = false

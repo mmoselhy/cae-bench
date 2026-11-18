@@ -1,0 +1,7 @@
+original = "cases/packaging/thermomechanical/pkg25d_warpage_tim126um_k3p9_h8700"
+track = "csv_interface"
+domain = "packaging"
+requires = ["fea.thermal.steady", "fea.orthotropic_conductivity", "mesh.unstructured.gmsh", "fea.thermomech.static"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is the CalculiX oracle's own answer on a structured hex grid (gt_type high-fidelity-solver), not a published value. Warpage and an interposer stress add element-technology sensitivity (bending of thin layers) on top of the thermal field; another FE code may land inside the band, but that must be measured with that code (calibrate) before its scores are trusted."
+figure = false

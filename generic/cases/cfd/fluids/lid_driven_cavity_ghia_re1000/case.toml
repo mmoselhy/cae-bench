@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/lid_driven_cavity_ghia_re1000"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.steady", "mesh.structured.block"]
+portability = "portable"
+portability_reason = "Fully specified laminar Navier-Stokes problem; the reference is the published Ghia et al. (1982) value, not an OpenFOAM output, so any converged incompressible solver should land inside the 5% band."
+figure = false

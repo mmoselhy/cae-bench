@@ -1,0 +1,9 @@
+{
+  "exported_from": "nDodecane_Reitz.yaml",
+  "phase": "nDodecane_IG",
+  "cantera_version": "3.2.0",
+  "n_species": 100,
+  "n_reactions": 553,
+  "transport": null,
+  "method": "cantera.Solution.write_chemkin"
+}

@@ -1,0 +1,51 @@
+# Profile: Siemens Simcenter (STAR-CCM+, Simcenter 3D / Nastran) -- STUB.
+#
+# The adapters for these solvers are untested stubs (see
+# generic/lib/caebench_tn/adapters/stubs.py): every submission is reported as
+# "unverified" and scores 0. The generator writes this profile's coverage
+# table but does not render a dataset unless run with --force.
+name = "siemens"
+status = "stub"
+label = "Siemens Simcenter: STAR-CCM+ (CFD), Simcenter 3D / Nastran (thermal, thermo-mechanical) -- adapters untested"
+inherit_images = false
+
+provides = [
+  "cfd.incompressible.laminar.steady",
+  "cfd.incompressible.laminar.transient",
+  "cfd.incompressible.rans.sa",
+  "cfd.incompressible.rans.kepsilon",
+  "cfd.incompressible.rans.komegasst",
+  "cfd.incompressible.les",
+  "cfd.heat.boussinesq",
+  "cfd.compressible.rans",
+  "mesh.structured.block",
+  "mesh.import.gmsh",
+  "mesh.import.cgns",
+  "mesh.unstructured.gmsh",
+  "fea.thermal.steady",
+  "fea.thermomech.static",
+  "fea.orthotropic_conductivity",
+]
+
+[domains.cfd]
+solvers = ["starccm"]
+docker_image = "TODO-siemens-starccm-image"
+verifier_image = "TODO-siemens-starccm-image"
+appendix = """
+## Environment (profile: siemens)
+
+TODO: STAR-CCM+ version, licence server, batch invocation (`starccm+ -batch`),
+how the harness exposes it (CLI or MCP). In `result.json`, use
+`"solver": {"name": "starccm", "version": "<version>"}`.
+"""
+
+[domains.packaging]
+solvers = ["simcenter-nastran"]
+docker_image = "TODO-siemens-nastran-image"
+verifier_image = "TODO-siemens-nastran-image"
+appendix = """
+## Environment (profile: siemens)
+
+TODO: Simcenter 3D / Nastran version and batch invocation. In `result.json`, use
+`"solver": {"name": "simcenter-nastran", "version": "<version>"}`.
+"""

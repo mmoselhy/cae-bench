@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/backstep_laminar_armaly_re389"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.laminar.steady", "mesh.structured.block"]
+portability = "portable-after-calibration"
+portability_reason = "Fully specified laminar problem, but gt_value (8.3417) is this repo's own OpenFOAM oracle at its 20,800-cell grid, not Armaly's measurement (xr/S ~ 8); another solver's converged answer is expected inside the 5% band (grid spread 0.64%) but that has not been measured."
+figure = false

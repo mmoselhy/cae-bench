@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/de_vahl_davis_natural_convection_ra1e4"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.heat.boussinesq", "cfd.incompressible.laminar.steady", "mesh.structured.block"]
+portability = "portable"
+portability_reason = "Fully specified nondimensional Boussinesq cavity; the reference is de Vahl Davis (1983) Table V, Nu_avg = 2.243, not an OpenFOAM output (the oracle lands 0.27% away), so any converged Boussinesq solver should sit inside the 5% band."
+figure = false

@@ -1,0 +1,14 @@
+CAE-bench-TN -- an unofficial, tool-neutral variant of CAE-bench.
+
+This directory is a derivative work of CAE-bench
+(https://github.com/svd-ai-lab/cae-bench), Copyright SVD AI Lab, licensed under
+the Apache License, Version 2.0 (see ../LICENSE). Task physics, reference
+values, tolerance bands, oracles and the verifier library are upstream's; the
+rendered tasks copy them unchanged. Changes made here: tool-neutral prompts,
+a tool-neutral output contract, solver adapters, a dataset generator, and one
+optional, default-preserving `driver` parameter in
+lib/sim_benchmark_verifier/sim_benchmark_verifier/native_{cantera,pybamm}.py.
+
+Scores produced with CAE-bench-TN are NOT CAE-bench scores and must not be
+reported, compared or published as such. Rendered task names use the
+namespace `caebench-tn/`.

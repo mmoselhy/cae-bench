@@ -1,0 +1,10 @@
+# Neutral source for CAE-bench-TN. The reference value, tolerance band and KPI
+# derivation are NOT here: the generator copies tests/kpis.json and
+# tests/spec.json byte-for-byte from `original` at render time (gate D).
+original = "cases/cfd/fluids/flatplate_zpg_subsonic"
+track = "csv_interface"
+domain = "cfd"
+requires = ["cfd.incompressible.rans.komegasst", "mesh.structured.block"]
+portability = "portable-after-calibration"
+portability_reason = "The reference is the published NASA TMR compressible SST-Vm finest-grid value, but the task is solved incompressibly and the OpenFOAM oracle already sits 3.1-3.2% from it on both KPIs; another code's SST variant, leading-edge transition handling or wall treatment can legitimately move it the remaining ~2% to outside the 5% band."
+figure = false

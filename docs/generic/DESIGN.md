@@ -162,7 +162,7 @@ inside/outside. It never writes to `kpis.json`.
 ## 9. Equivalence gates
 
 - **A** — run `harbor run --agent oracle` on all 77 originals; save per-KPI
-  values + scores to `generic/baseline/`.
+  values + scores to `generic/results/original.json`.
 - **B** — render `opensource`, run the oracles adapted to the contract (their
   existing solve plus a `replay.sh` that calls the original entry point and a
   `result.json` writer). Pass iff score identical and every KPI satisfies
@@ -177,6 +177,17 @@ inside/outside. It never writes to `kpis.json`.
 - **E** — `generic/PARITY.md`, one row per task.
 - Agent-level parity script (`generic/scripts/agent_parity.sh`) is written but
   **not run** without explicit approval (it spends API money).
+
+*Measured (2026-11-18, all 77 tasks; digests in `generic/results/`):* A — 77/77
+score 1.0. B — 77/77 score 1.0, all 97 KPIs bit-identical (worst rel. diff 0).
+C — empty 0 and printf-replay 0 on all 77; `lib/sim_benchmark_verifier/tests`
+the same 443/7/32 set as above; `generic/lib/tests` 21 passed. D — 154/154
+files byte-identical, `cases/` clean. E — `generic/PARITY.md`.
+Three upstream oracles (`flatplate_zpg_subsonic`, `channel_retau395_repair_closure`,
+`turbulent_channel_flow_retau590`) exit non-zero in the agent phase (OpenFOAM
+bashrc under `set -u`) yet leave a complete case that the evaluator replays to
+1.0; the TN wrapper therefore keeps the upstream exit code and still writes the
+contract whenever a submission exists.
 
 ## 10. Environment prerequisites
 

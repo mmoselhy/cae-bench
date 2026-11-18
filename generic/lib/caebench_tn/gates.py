@@ -246,6 +246,9 @@ def parity(rel_tol: float, profile: str = "opensource") -> dict[str, Any]:
     gen = json.loads((RESULTS / "generic.json").read_text())
     neg = {k: (json.loads((RESULTS / f"neg_{k}.json").read_text()) if (RESULTS / f"neg_{k}.json").is_file() else {})
            for k in ("empty", "printf")}
+    conv = {d: (json.loads((RESULTS / "conversions" / f"{d}.json").read_text())
+                if (RESULTS / "conversions" / f"{d}.json").is_file() else {}) for d in ("battery", "combustion")}
+    mesh = json.loads((RESULTS / "meshproof.json").read_text()) if (RESULTS / "meshproof.json").is_file() else {}
     rows = []
     for key in sorted(set(base) | set(gen)):
         b, g = base.get(key, {}), gen.get(key, {})
@@ -272,8 +275,31 @@ def parity(rel_tol: float, profile: str = "opensource") -> dict[str, Any]:
                      "neg_printf": neg["printf"].get(key, {}).get("score"),
                      "diff": None if sb is None or sg is None else sg - sb,
                      "kpi_max_rel_diff": worst, "pass": same, "portability": label,
-                     "portability_reason": reason})
+                     "portability_reason": reason,
+                     "neutral_input": _neutral_input(key, conv, mesh, bk)})
     return {"rel_tol": rel_tol, "rows": rows}
+
+
+def _neutral_input(key: str, conv: dict, mesh: dict, base_kpis: dict) -> str:
+    """One cell: how the task's neutral input was proven (see results/conversions/)."""
+    dom = key.split("/")[0]
+    if key in mesh:
+        m = mesh[key]
+        worst = max((abs(float(v["value"]) - float(base_kpis[k]["value"])) / max(1.0, abs(float(base_kpis[k]["value"])))
+                     for k, v in (m.get("kpis") or {}).items() if k in base_kpis), default=float("nan"))
+        return f"Gmsh mesh: score {m.get('score'):g}, KPI rel. {worst:.1e}"
+    c = conv.get(dom, {}).get(key)
+    if c is None:
+        return "native input only"
+    if "kpis" not in c or any(e in c for e in ("error", "native_error", "neutral_error")):
+        return "not proven (native-only task)"
+    rows = [r for r in c["kpis"].values() if r.get("diff_in_band_widths") is not None]
+    if not rows:
+        return "not proven"
+    worst = max(r["diff_in_band_widths"] for r in rows)
+    inside = all(r["neutral_inside_band"] for r in rows)
+    kind = "data sheet" if dom == "battery" else "Chemkin"
+    return f"{kind}: {worst:.1e} band widths, {'inside band' if inside else '**outside band**'}"
 
 
 def write_parity_md(rep: dict[str, Any]) -> Path:
@@ -295,14 +321,17 @@ def write_parity_md(rep: dict[str, Any]) -> Path:
         "Negative controls (gate C), run through Harbor on the rendered task: **empty** -- an empty "
         "submission; **printf** -- a valid contract whose `replay.sh` only prints the reference values.",
         "",
-        "| task | baseline | generic | difference | max KPI rel. diff | pass | empty | printf | portability | reason |",
-        "|---|---|---|---|---|---|---|---|---|---|",
+        "Neutral input: the oracle solved again from the neutral input (`results/conversions/`, "
+        "`results/meshproof.json`); the KPI shift is given in band widths (`|native - neutral| / pass_tol`).",
+        "",
+        "| task | baseline | generic | difference | max KPI rel. diff | pass | empty | printf | neutral input | portability | reason |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     fmt = lambda v: "-" if v is None else f"{v:g}"  # noqa: E731
     for r in rows:
         lines.append(f"| `{r['task']}` | {fmt(r['baseline'])} | {fmt(r['generic'])} | {fmt(r['diff'])} | "
                      f"{r['kpi_max_rel_diff']:.2e} | {'yes' if r['pass'] else '**no**'} | "
-                     f"{fmt(r['neg_empty'])} | {fmt(r['neg_printf'])} | "
+                     f"{fmt(r['neg_empty'])} | {fmt(r['neg_printf'])} | {r['neutral_input']} | "
                      f"{r['portability']} | {r['portability_reason']} |")
     path = GENERIC / "PARITY.md"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")

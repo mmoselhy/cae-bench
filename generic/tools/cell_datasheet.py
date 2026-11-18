@@ -31,8 +31,10 @@ FORMAT = "caebench-tn-cell-datasheet-v1"
 def _grid(arg: str, key: str, pv) -> np.ndarray | None:
     """Tabulation grid for one argument, or None if it is a cell constant."""
     if arg == "sto":
-        edge = np.array([1e-6, 1e-5, 1e-4, 5e-4, 1e-3, 2e-3, 5e-3])
-        return np.unique(np.concatenate([edge, np.linspace(0.01, 0.99, 491), 1 - edge]))
+        # Geometric toward both ends: some OCP fits carry exp(-b*sto) terms with
+        # b ~ 370 (Ecker2015 graphite), which a uniform grid under-resolves.
+        edge = np.geomspace(1e-6, 0.05, 800)
+        return np.unique(np.concatenate([edge, np.linspace(0.05, 0.95, 451), 1 - edge]))
     if arg in ("T", "T_dim"):
         return np.unique(np.concatenate([np.linspace(233.15, 263.15, 4), np.linspace(263.15, 333.15, 15),
                                          np.linspace(333.15, 373.15, 5)]))

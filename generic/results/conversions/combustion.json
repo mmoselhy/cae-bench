@@ -1,0 +1,291 @@
+{
+  "combustion/flames/c2h4_air_flame_speed_phi1p14_1p2atm_309k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 94.23633791572861,
+        "neutral": 94.23633792091611,
+        "abs_diff": 5.187501983527909e-09,
+        "rel_diff": 5.5047788340065404e-11,
+        "diff_in_band_widths": 1.100956209767979e-09,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 7.5,
+    "wall_neutral_s": 7.5
+  },
+  "combustion/flames/c2h6_air_flame_speed_phi1p09_1p3atm_316k": {
+    "kpis": {
+      "unity_lewis_speed_ratio": {
+        "native": 0.7124448306685538,
+        "neutral": 0.7124448306620693,
+        "abs_diff": 6.484479619928152e-12,
+        "rel_diff": 9.10172878065963e-12,
+        "diff_in_band_widths": 1.8203453234784865e-10,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 17.3,
+    "wall_neutral_s": 16.6
+  },
+  "combustion/flames/c3h8_air_flame_speed_phi1p11_1p3atm_313k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 51.15571541496108,
+        "neutral": 51.15571541487167,
+        "abs_diff": 8.94075924406934e-11,
+        "rel_diff": 1.7477537302614895e-12,
+        "diff_in_band_widths": 3.495508513838865e-11,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 8.3,
+    "wall_neutral_s": 8.4
+  },
+  "combustion/flames/ch3oh_air_flame_speed_phi1p16_1p3atm_337k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 56.73261413506846,
+        "neutral": 56.73261413700482,
+        "abs_diff": 1.9363639580660674e-09,
+        "rel_diff": 3.4131407261720586e-11,
+        "diff_in_band_widths": 6.826283153129127e-10,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 12.9,
+    "wall_neutral_s": 13.8
+  },
+  "combustion/flames/ch4_air_flame_speed_meet_resolution_spec": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 38.814880153691824,
+        "neutral": 38.814880152627424,
+        "abs_diff": 1.0644001235959877e-09,
+        "rel_diff": 2.742247610662141e-11,
+        "diff_in_band_widths": 5.484492417066579e-10,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 66.1,
+    "wall_neutral_s": 66.8
+  },
+  "combustion/flames/ch4_air_flame_speed_phi1p24_1p6atm_306k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 24.93502876552075,
+        "neutral": 24.935028766055588,
+        "abs_diff": 5.348361753476638e-10,
+        "rel_diff": 2.144919022861589e-11,
+        "diff_in_band_widths": 4.289842994567185e-10,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 9.9,
+    "wall_neutral_s": 9.9
+  },
+  "combustion/flames/h2_air_flame_speed_phi1p12_1p2atm_312k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 279.5499332321512,
+        "neutral": 279.54993323210186,
+        "abs_diff": 4.934008757118136e-11,
+        "rel_diff": 1.7649829853547868e-13,
+        "diff_in_band_widths": 3.5299651276109005e-12,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.3,
+    "wall_neutral_s": 1.3
+  },
+  "combustion/flames/nh3_air_flame_speed_phi1p12_1p4atm_319k": {
+    "kpis": {
+      "flame_speed_cm_s": {
+        "native": 11.669835921381281,
+        "neutral": 11.669835921415695,
+        "abs_diff": 3.441336104970105e-11,
+        "rel_diff": 2.9489155872919736e-12,
+        "diff_in_band_widths": 5.89784932898611e-11,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 6.7,
+    "wall_neutral_s": 6.5
+  },
+  "combustion/flames/nh3_flame_speed_repair_mechanism": {
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/repo/cases/combustion/flames/nh3_flame_speed_repair_mechanism/solution/run_case.py'"
+  },
+  "combustion/kinetics/c2h2_air_idt_phi0p74_1462k_6p4atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.018192827458404184,
+        "neutral": 0.018191866671628174,
+        "abs_diff": 9.60786776010164e-07,
+        "rel_diff": 5.281129490217466e-05,
+        "diff_in_band_widths": 0.001056227492205888,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.0,
+    "wall_neutral_s": 1.0
+  },
+  "combustion/kinetics/c2h4_air_idt_phi0p68_1641k_11p8atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.002534931370495041,
+        "neutral": 0.002534903589768166,
+        "abs_diff": 2.7780726875176187e-08,
+        "rel_diff": 1.0959163312476957e-05,
+        "diff_in_band_widths": 0.00021918338474968688,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 0.9,
+    "wall_neutral_s": 0.9
+  },
+  "combustion/kinetics/c2h6_air_idt_phi0p63_1547k_7p3atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.012072108316059859,
+        "neutral": 0.012072138827937102,
+        "abs_diff": 3.0511877243538654e-08,
+        "rel_diff": 2.527468810311109e-06,
+        "diff_in_band_widths": 5.054941102797136e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 0.9,
+    "wall_neutral_s": 1.1
+  },
+  "combustion/kinetics/c3h8_air_idt_phi0p59_1568k_8p1atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.010673239654049645,
+        "neutral": 0.010673014577779848,
+        "abs_diff": 2.2507626979730022e-07,
+        "rel_diff": 2.1087905555639023e-05,
+        "diff_in_band_widths": 0.0004217596780671218,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.2,
+    "wall_neutral_s": 0.9
+  },
+  "combustion/kinetics/ch3oh_air_idt_phi0p66_1583k_6p8atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.02105408516949533,
+        "neutral": 0.021055221796605777,
+        "abs_diff": 1.1366271104457093e-06,
+        "rel_diff": 5.398606024889346e-05,
+        "diff_in_band_widths": 0.0010797204444224255,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.0,
+    "wall_neutral_s": 1.0
+  },
+  "combustion/kinetics/ch4_air_idt_phi0p55_1633k_9p2atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.0492815029784376,
+        "neutral": 0.04928127613933385,
+        "abs_diff": 2.2683910375076444e-07,
+        "rel_diff": 4.60292584522056e-06,
+        "diff_in_band_widths": 9.206001690347924e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 0.9,
+    "wall_neutral_s": 1.0
+  },
+  "combustion/kinetics/ch4_air_idt_resume_interrupted_run": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": null,
+        "neutral": null
+      }
+    },
+    "wall_native_s": 0.5,
+    "wall_neutral_s": 0.6,
+    "native_error": "Traceback (most recent call last):\n  File \"/tmp/tmpkhqhfgkv/run_case.py\", line 22, in <module>\n    with open(\"results.csv\", newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'results.csv'\n",
+    "neutral_error": "Traceback (most recent call last):\n  File \"/tmp/tmp3vf4g62z/run_case.py\", line 22, in <module>\n    with open(\"results.csv\", newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'results.csv'\n"
+  },
+  "combustion/kinetics/ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k": {
+    "kpis": {
+      "s_ch3_ho2": {
+        "native": -0.2246116388416874,
+        "neutral": -0.22445142729041723,
+        "abs_diff": 0.00016021155127016184,
+        "rel_diff": 0.0007132824999468681,
+        "diff_in_band_widths": 0.014270773413930534,
+        "neutral_inside_band": true
+      },
+      "ignition_delay_ms": {
+        "native": 1.718305479842798,
+        "neutral": 1.7183033659309306,
+        "abs_diff": 2.1139118673296764e-06,
+        "rel_diff": 1.2302305335853735e-06,
+        "diff_in_band_widths": 2.4604631861762254e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 3.3,
+    "wall_neutral_s": 3.5
+  },
+  "combustion/kinetics/h2_air_idt_phi0p57_1246k_5p4atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.009592509937284244,
+        "neutral": 0.009592510106474939,
+        "abs_diff": 1.6919069444065737e-10,
+        "rel_diff": 1.763779193837951e-08,
+        "diff_in_band_widths": 3.527558364612752e-07,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 0.9,
+    "wall_neutral_s": 1.0
+  },
+  "combustion/kinetics/ndodecane_air_idt_phi0p83_1319k_14p2atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.022097548205455373,
+        "neutral": 0.022097865078177768,
+        "abs_diff": 3.1687272239455666e-07,
+        "rel_diff": 1.4339723097258733e-05,
+        "diff_in_band_widths": 0.00028679508758416714,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.4,
+    "wall_neutral_s": 1.1
+  },
+  "combustion/kinetics/nh3_air_idt_phi0p72_1521k_5p1atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.4806600353922438,
+        "neutral": 0.48066070244769404,
+        "abs_diff": 6.670554502652415e-07,
+        "rel_diff": 1.387790540399077e-06,
+        "diff_in_band_widths": 2.7755812851713955e-05,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 1.2,
+    "wall_neutral_s": 1.0
+  },
+  "combustion/kinetics/nhexane_air_idt_phi0p79_1442k_4p6atm": {
+    "kpis": {
+      "ignition_delay_ms": {
+        "native": 0.035011269692460004,
+        "neutral": 0.035010936161227114,
+        "abs_diff": 3.3353123288920594e-07,
+        "rel_diff": 9.526396380906886e-06,
+        "diff_in_band_widths": 0.00019052776268759284,
+        "neutral_inside_band": true
+      }
+    },
+    "wall_native_s": 71.5,
+    "wall_neutral_s": 78.2
+  }
+}

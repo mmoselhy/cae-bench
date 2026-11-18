@@ -1,4 +1,314 @@
 {
+  "battery/cells/a123_lfp_discharge_1p15c_298k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__a123_lfp_discharge_1p15c_298k/a123_lfp_discharge_1p15c_298k__piApab2",
+    "verification": "verified"
+  },
+  "battery/cells/a123_lfp_energy_0p88c_300k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__a123_lfp_energy_0p88c_300k/a123_lfp_energy_0p88c_300k__mM8BJ6H",
+    "verification": "verified"
+  },
+  "battery/cells/a123_lfp_mean_voltage_1p52c_297k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__a123_lfp_mean_voltage_1p52c_297k/a123_lfp_mean_voltage_1p52c_297k__rJk73Rf",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_discharge_0p62c_293k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__ecker_graphite_discharge_0p62c_293k/ecker_graphite_discharge_0p62c_2__HEFccpy",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_energy_1p12c_298k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__ecker_graphite_energy_1p12c_298k/ecker_graphite_energy_1p12c_298k__B7Sb6YD",
+    "verification": "verified"
+  },
+  "battery/cells/ecker_graphite_mean_voltage_0p84c_292k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__ecker_graphite_mean_voltage_0p84c_292k/ecker_graphite_mean_voltage_0p84__JLmXJfM",
+    "verification": "verified"
+  },
+  "battery/cells/kokam_lco_discharge_0p71c_302k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__kokam_lco_discharge_0p71c_302k/kokam_lco_discharge_0p71c_302k__aMSUkDL",
+    "verification": "verified"
+  },
+  "battery/cells/lco_graphite_discharge_1p27c_295k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lco_graphite_discharge_1p27c_295k/lco_graphite_discharge_1p27c_295__oRrMcXL",
+    "verification": "verified"
+  },
+  "battery/cells/lco_graphite_energy_1p73c_296k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lco_graphite_energy_1p73c_296k/lco_graphite_energy_1p73c_296k__7apXZx4",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_fast_charge_current_limit_45c": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lgm50_fast_charge_current_limit_45c/lgm50_fast_charge_current_limit__E6jpuRB",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_discharge_2p3c_288k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lgm50_nmc811_discharge_2p3c_288k/lgm50_nmc811_discharge_2p3c_288k__stXmN78",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_energy_1p6c_301k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lgm50_nmc811_energy_1p6c_301k/lgm50_nmc811_energy_1p6c_301k__s3WakQM",
+    "verification": "verified"
+  },
+  "battery/cells/lgm50_nmc811_mean_voltage_0p78c_294k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__lgm50_nmc811_mean_voltage_0p78c_294k/lgm50_nmc811_mean_voltage_0p78c__krYR8jp",
+    "verification": "verified"
+  },
+  "battery/cells/nca_graphite_discharge_0p93c_299k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__nca_graphite_discharge_0p93c_299k/nca_graphite_discharge_0p93c_299__mxNgXow",
+    "verification": "verified"
+  },
+  "battery/cells/nmc_pouch_discharge_1p8c_303k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__nmc_pouch_discharge_1p8c_303k/nmc_pouch_discharge_1p8c_303k__XRgyQpC",
+    "verification": "verified"
+  },
+  "battery/cells/nmc_pouch_energy_2p4c_299k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__cells__nmc_pouch_energy_2p4c_299k/nmc_pouch_energy_2p4c_299k__fcBxbJj",
+    "verification": "verified"
+  },
+  "battery/characterization/a123_cccv_charge_1p1c_from_soc0p26": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__a123_cccv_charge_1p1c_from_soc0p26/a123_cccv_charge_1p1c_from_soc0p__XrzGuhD",
+    "verification": "verified"
+  },
+  "battery/characterization/a123_pulse_resistance_1p8a_soc0p51": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__a123_pulse_resistance_1p8a_soc0p51/a123_pulse_resistance_1p8a_soc0p__gV4AEhh",
+    "verification": "verified"
+  },
+  "battery/characterization/kokam_cccv_charge_0p64c_from_soc0p31": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__kokam_cccv_charge_0p64c_from_soc0p31/kokam_cccv_charge_0p64c_from_soc__X8hZH9w",
+    "verification": "verified"
+  },
+  "battery/characterization/kokam_pulse_resistance_1p2a_soc0p47": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__kokam_pulse_resistance_1p2a_soc0p47/kokam_pulse_resistance_1p2a_soc0__qzQ8ETR",
+    "verification": "verified"
+  },
+  "battery/characterization/lco_graphite_pulse_resistance_0p9a_soc0p66": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__lco_graphite_pulse_resistance_0p9a_soc0p66/lco_graphite_pulse_resistance_0p__E4qrGAL",
+    "verification": "verified"
+  },
+  "battery/characterization/lgm50_cccv_charge_1p52c_from_soc0p12": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__lgm50_cccv_charge_1p52c_from_soc0p12/lgm50_cccv_charge_1p52c_from_soc__TzsNc4F",
+    "verification": "verified"
+  },
+  "battery/characterization/lgm50_pulse_resistance_5a_soc0p62": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__lgm50_pulse_resistance_5a_soc0p62/lgm50_pulse_resistance_5a_soc0p6__ZFNZCNL",
+    "verification": "verified"
+  },
+  "battery/characterization/nca_cccv_charge_0p79c_from_soc0p35": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__nca_cccv_charge_0p79c_from_soc0p35/nca_cccv_charge_0p79c_from_soc0p__hAixu4k",
+    "verification": "verified"
+  },
+  "battery/characterization/nca_pulse_resistance_0p6a_soc0p74": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__nca_pulse_resistance_0p6a_soc0p74/nca_pulse_resistance_0p6a_soc0p7__A9gCquN",
+    "verification": "verified"
+  },
+  "battery/characterization/nmc_pouch_cccv_charge_1p3c_from_soc0p23": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__nmc_pouch_cccv_charge_1p3c_from_soc0p23/nmc_pouch_cccv_charge_1p3c_from__eKhzuSr",
+    "verification": "verified"
+  },
+  "battery/characterization/nmc_pouch_pulse_resistance_4p1a_soc0p55": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__characterization__nmc_pouch_pulse_resistance_4p1a_soc0p55/nmc_pouch_pulse_resistance_4p1a__rFUR8Pu",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_plating_fade_9_cycles_1p3c": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__degradation__lgm50_plating_fade_9_cycles_1p3c/lgm50_plating_fade_9_cycles_1p3c__YiP7ALB",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_sei_fade_12_cycles_1c": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__degradation__lgm50_sei_fade_12_cycles_1c/lgm50_sei_fade_12_cycles_1c__ukduy7G",
+    "verification": "verified"
+  },
+  "battery/degradation/lgm50_sei_plating_fade_10_cycles_1p5c": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__degradation__lgm50_sei_plating_fade_10_cycles_1p5c/lgm50_sei_plating_fade_10_cycles__FGC5CJY",
+    "verification": "verified"
+  },
+  "battery/thermal/lco_graphite_thermal_rise_2p35c_299k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__thermal__lco_graphite_thermal_rise_2p35c_299k/lco_graphite_thermal_rise_2p35c__skSgatK",
+    "verification": "verified"
+  },
+  "battery/thermal/lgm50_okane_thermal_rise_1p85c_292k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__thermal__lgm50_okane_thermal_rise_1p85c_292k/lgm50_okane_thermal_rise_1p85c_2__YVgjTqk",
+    "verification": "verified"
+  },
+  "battery/thermal/lgm50_thermal_rise_0p91c_303k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__thermal__lgm50_thermal_rise_0p91c_303k/lgm50_thermal_rise_0p91c_303k__Xch3ZZP",
+    "verification": "verified"
+  },
+  "battery/thermal/nmc_pouch_thermal_rise_2p7c_305k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__battery__thermal__nmc_pouch_thermal_rise_2p7c_305k/nmc_pouch_thermal_rise_2p7c_305k__9LrUExV",
+    "verification": "verified"
+  },
+  "cfd/fluids/backstep_laminar_armaly_re389": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__backstep_laminar_armaly_re389/backstep_laminar_armaly_re389__mfbSs8A",
+    "verification": "failed"
+  },
+  "cfd/fluids/bump_in_channel_2d": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__bump_in_channel_2d/bump_in_channel_2d__QstAGyP",
+    "verification": "failed"
+  },
+  "cfd/fluids/channel_developing_entry": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__channel_developing_entry/channel_developing_entry__UTNFFWf",
+    "verification": "failed"
+  },
+  "cfd/fluids/channel_retau395_repair_closure": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__channel_retau395_repair_closure/channel_retau395_repair_closure__UgQSCdJ",
+    "verification": "failed"
+  },
+  "cfd/fluids/cylinder_schafer_turek_2d1_cd": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__cylinder_schafer_turek_2d1_cd/cylinder_schafer_turek_2d1_cd__RdosY3J",
+    "verification": "failed"
+  },
+  "cfd/fluids/de_vahl_davis_natural_convection_ra1e4": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__de_vahl_davis_natural_convection_ra1e4/de_vahl_davis_natural_convection__iMAHDsw",
+    "verification": "failed"
+  },
+  "cfd/fluids/flatplate_zpg_subsonic": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__flatplate_zpg_subsonic/flatplate_zpg_subsonic__YQGXHdx",
+    "verification": "failed"
+  },
+  "cfd/fluids/kovasznay_flow_re40": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__kovasznay_flow_re40/kovasznay_flow_re40__DPULphy",
+    "verification": "failed"
+  },
   "cfd/fluids/lid_driven_cavity_ghia_re1000": {
     "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
     "failure_category": "invalid_submission",
@@ -8,6 +318,189 @@
     "trial": "results/jobs/neg_printf__cfd__fluids__lid_driven_cavity_ghia_re1000/lid_driven_cavity_ghia_re1000__rGAcy5i",
     "verification": "failed"
   },
+  "cfd/fluids/naca0012_subsonic": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__naca0012_subsonic/naca0012_subsonic__wo4Pw6Q",
+    "verification": "failed"
+  },
+  "cfd/fluids/plane_poiseuille_friction_factor": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__plane_poiseuille_friction_factor/plane_poiseuille_friction_factor__NtuVSv7",
+    "verification": "failed"
+  },
+  "cfd/fluids/taylor_green_vortex_2d_re100": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__taylor_green_vortex_2d_re100/taylor_green_vortex_2d_re100__FhdTc5X",
+    "verification": "failed"
+  },
+  "cfd/fluids/turbulent_channel_flow_retau590": {
+    "error": "missing reproducible case inputs: a case directory holding 0/, constant/, system/",
+    "failure_category": "invalid_submission",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__cfd__fluids__turbulent_channel_flow_retau590/turbulent_channel_flow_retau590__T2qkWnx",
+    "verification": "failed"
+  },
+  "combustion/flames/c2h4_air_flame_speed_phi1p14_1p2atm_309k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__c2h4_air_flame_speed_phi1p14_1p2atm_309k/c2h4_air_flame_speed_phi1p14_1p2__gm7iP7Z",
+    "verification": "verified"
+  },
+  "combustion/flames/c2h6_air_flame_speed_phi1p09_1p3atm_316k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__c2h6_air_flame_speed_phi1p09_1p3atm_316k/c2h6_air_flame_speed_phi1p09_1p3__8pmffwG",
+    "verification": "verified"
+  },
+  "combustion/flames/c3h8_air_flame_speed_phi1p11_1p3atm_313k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__c3h8_air_flame_speed_phi1p11_1p3atm_313k/c3h8_air_flame_speed_phi1p11_1p3__9Egc2uG",
+    "verification": "verified"
+  },
+  "combustion/flames/ch3oh_air_flame_speed_phi1p16_1p3atm_337k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__ch3oh_air_flame_speed_phi1p16_1p3atm_337k/ch3oh_air_flame_speed_phi1p16_1p__Q4THwW6",
+    "verification": "verified"
+  },
+  "combustion/flames/ch4_air_flame_speed_meet_resolution_spec": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__ch4_air_flame_speed_meet_resolution_spec/ch4_air_flame_speed_meet_resolut__5fsx4ae",
+    "verification": "verified"
+  },
+  "combustion/flames/ch4_air_flame_speed_phi1p24_1p6atm_306k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__ch4_air_flame_speed_phi1p24_1p6atm_306k/ch4_air_flame_speed_phi1p24_1p6a__eofa985",
+    "verification": "verified"
+  },
+  "combustion/flames/h2_air_flame_speed_phi1p12_1p2atm_312k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__h2_air_flame_speed_phi1p12_1p2atm_312k/h2_air_flame_speed_phi1p12_1p2at__nfzkpAh",
+    "verification": "verified"
+  },
+  "combustion/flames/nh3_air_flame_speed_phi1p12_1p4atm_319k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__nh3_air_flame_speed_phi1p12_1p4atm_319k/nh3_air_flame_speed_phi1p12_1p4a__6tmbibo",
+    "verification": "verified"
+  },
+  "combustion/flames/nh3_flame_speed_repair_mechanism": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__flames__nh3_flame_speed_repair_mechanism/nh3_flame_speed_repair_mechanism__nCThWCX",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h2_air_idt_phi0p74_1462k_6p4atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__c2h2_air_idt_phi0p74_1462k_6p4atm/c2h2_air_idt_phi0p74_1462k_6p4at__iGZuP4b",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h4_air_idt_phi0p68_1641k_11p8atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__c2h4_air_idt_phi0p68_1641k_11p8atm/c2h4_air_idt_phi0p68_1641k_11p8a__fyVyhJt",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c2h6_air_idt_phi0p63_1547k_7p3atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__c2h6_air_idt_phi0p63_1547k_7p3atm/c2h6_air_idt_phi0p63_1547k_7p3at__qkfs63e",
+    "verification": "verified"
+  },
+  "combustion/kinetics/c3h8_air_idt_phi0p59_1568k_8p1atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__c3h8_air_idt_phi0p59_1568k_8p1atm/c3h8_air_idt_phi0p59_1568k_8p1at__iCqeudA",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch3oh_air_idt_phi0p66_1583k_6p8atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__ch3oh_air_idt_phi0p66_1583k_6p8atm/ch3oh_air_idt_phi0p66_1583k_6p8a__Fmcbp6y",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_phi0p55_1633k_9p2atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__ch4_air_idt_phi0p55_1633k_9p2atm/ch4_air_idt_phi0p55_1633k_9p2atm__AsPNdAJ",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_resume_interrupted_run": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__ch4_air_idt_resume_interrupted_run/ch4_air_idt_resume_interrupted_r__75eZNHJ",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__ch4_air_idt_sensitivity_ch3ho2_phi0p87_1390k/ch4_air_idt_sensitivity_ch3ho2_p__rNEgiUq",
+    "verification": "verified"
+  },
+  "combustion/kinetics/h2_air_idt_phi0p57_1246k_5p4atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__h2_air_idt_phi0p57_1246k_5p4atm/h2_air_idt_phi0p57_1246k_5p4atm__MVNKcX8",
+    "verification": "verified"
+  },
+  "combustion/kinetics/ndodecane_air_idt_phi0p83_1319k_14p2atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__ndodecane_air_idt_phi0p83_1319k_14p2atm/ndodecane_air_idt_phi0p83_1319k__QdaArhu",
+    "verification": "verified"
+  },
+  "combustion/kinetics/nh3_air_idt_phi0p72_1521k_5p1atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__nh3_air_idt_phi0p72_1521k_5p1atm/nh3_air_idt_phi0p72_1521k_5p1atm__9iKRYoZ",
+    "verification": "verified"
+  },
+  "combustion/kinetics/nhexane_air_idt_phi0p79_1442k_4p6atm": {
+    "kpis": {},
+    "score": 0.0,
+    "status": "completed",
+    "trial": "results/jobs/neg_printf__combustion__kinetics__nhexane_air_idt_phi0p79_1442k_4p6atm/nhexane_air_idt_phi0p79_1442k_4p__EcJg6vz",
+    "verification": "verified"
+  },
   "packaging/thermal/pkg25d_thermal_tim118um_k4p7_h22600": {
     "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
     "failure_category": "invalid_physics_setup",
@@ -15,6 +508,78 @@
     "score": 0.0,
     "status": "failed",
     "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim118um_k4p7_h22600/pkg25d_thermal_tim118um_k4p7_h22__mkjvb3T",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim142um_k3p6_h14200": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim142um_k3p6_h14200/pkg25d_thermal_tim142um_k3p6_h14__36gQBqN",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim32um_k8p4_h19000": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim32um_k8p4_h19000/pkg25d_thermal_tim32um_k8p4_h190__qDdFTRJ",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim58um_k9p1_h9400": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim58um_k9p1_h9400/pkg25d_thermal_tim58um_k9p1_h940__862rQsn",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim85um_k6p2_h11500": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim85um_k6p2_h11500/pkg25d_thermal_tim85um_k6p2_h115__dZyGq9r",
+    "verification": "failed"
+  },
+  "packaging/thermal/pkg25d_thermal_tim_delta_118to32_h22600": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermal__pkg25d_thermal_tim_delta_118to32_h22600/pkg25d_thermal_tim_delta_118to32__CcH62HW",
+    "verification": "failed"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim126um_k3p9_h8700": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermomechanical__pkg25d_warpage_tim126um_k3p9_h8700/pkg25d_warpage_tim126um_k3p9_h87__CfmFHN3",
+    "verification": "failed"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim41um_k9p8_h24500": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermomechanical__pkg25d_warpage_tim41um_k9p8_h24500/pkg25d_warpage_tim41um_k9p8_h245__DXcokpP",
+    "verification": "failed"
+  },
+  "packaging/thermomechanical/pkg25d_warpage_tim72um_k6p6_h16300": {
+    "error": "the rerun left no CalculiX result database -- no .frd holding the model ccx assembled together with solved values; results.csv was not produced by solving",
+    "failure_category": "invalid_physics_setup",
+    "kpis": {},
+    "score": 0.0,
+    "status": "failed",
+    "trial": "results/jobs/neg_printf__packaging__thermomechanical__pkg25d_warpage_tim72um_k6p6_h16300/pkg25d_warpage_tim72um_k6p6_h163__kNtE6X9",
     "verification": "failed"
   }
 }

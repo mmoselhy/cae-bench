@@ -448,13 +448,16 @@
     "verification": "verified"
   },
   "cfd/fluids/channel_retau395_repair_closure": {
-    "error": "result.json missing from the submission root",
-    "failure_category": "contract_invalid",
-    "kpis": {},
-    "score": 0.0,
-    "status": "failed",
-    "trial": "results/jobs/generic__cfd__fluids__channel_retau395_repair_closure/channel_retau395_repair_closure__N3WP6Rd",
-    "verification": "failed"
+    "kpis": {
+      "ub_over_utau": {
+        "score": 1.0,
+        "value": 17.5078201
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__channel_retau395_repair_closure/channel_retau395_repair_closure__UeANFfz",
+    "verification": "verified"
   },
   "cfd/fluids/cylinder_schafer_turek_2d1_cd": {
     "kpis": {
@@ -481,13 +484,20 @@
     "verification": "verified"
   },
   "cfd/fluids/flatplate_zpg_subsonic": {
-    "error": "result.json missing from the submission root",
-    "failure_category": "contract_invalid",
-    "kpis": {},
-    "score": 0.0,
-    "status": "failed",
-    "trial": "results/jobs/generic__cfd__fluids__flatplate_zpg_subsonic/flatplate_zpg_subsonic__tQhhBtG",
-    "verification": "failed"
+    "kpis": {
+      "cf_x097": {
+        "score": 1.0,
+        "value": 0.00260384889
+      },
+      "drag_coefficient": {
+        "score": 1.0,
+        "value": 0.00276106336
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__flatplate_zpg_subsonic/flatplate_zpg_subsonic__83oAFjs",
+    "verification": "verified"
   },
   "cfd/fluids/kovasznay_flow_re40": {
     "kpis": {
@@ -554,13 +564,16 @@
     "verification": "verified"
   },
   "cfd/fluids/turbulent_channel_flow_retau590": {
-    "error": "result.json missing from the submission root",
-    "failure_category": "contract_invalid",
-    "kpis": {},
-    "score": 0.0,
-    "status": "failed",
-    "trial": "results/jobs/generic__cfd__fluids__turbulent_channel_flow_retau590/turbulent_channel_flow_retau590__EqnfeqM",
-    "verification": "failed"
+    "kpis": {
+      "ub_over_utau": {
+        "score": 1.0,
+        "value": 18.8090941
+      }
+    },
+    "score": 1.0,
+    "status": "completed",
+    "trial": "results/jobs/generic__cfd__fluids__turbulent_channel_flow_retau590/turbulent_channel_flow_retau590__cFmkYQ5",
+    "verification": "verified"
   },
   "combustion/flames/c2h4_air_flame_speed_phi1p14_1p2atm_309k": {
     "kpis": {

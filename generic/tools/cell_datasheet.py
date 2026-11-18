@@ -34,17 +34,24 @@ def _grid(arg: str, key: str, pv) -> np.ndarray | None:
         edge = np.array([1e-6, 1e-5, 1e-4, 5e-4, 1e-3, 2e-3, 5e-3])
         return np.unique(np.concatenate([edge, np.linspace(0.01, 0.99, 491), 1 - edge]))
     if arg in ("T", "T_dim"):
-        return np.linspace(233.15, 373.15, 15)
+        return np.unique(np.concatenate([np.linspace(233.15, 263.15, 4), np.linspace(263.15, 333.15, 15),
+                                         np.linspace(333.15, 373.15, 5)]))
     if arg == "c_e":
         c0 = float(pv.get("Initial concentration in electrolyte [mol.m-3]", 1000.0))
-        return np.linspace(1.0, max(4.0 * c0, 4000.0), 41)
+        return _clustered(1.0, max(4.0 * c0, 4000.0), 61)
     if arg == "c_s_surf":
-        return np.linspace(0.0, _c_s_max(key, pv), 51)
+        return _clustered(0.0, _c_s_max(key, pv), 81)
     if arg == "c_Li":
         return np.concatenate([[0.0], np.geomspace(1e-3, 1e5, 40)])
     if arg == "L_sei":
         return np.geomspace(1e-12, 1e-5, 41)
     return None
+
+
+def _clustered(lo: float, hi: float, n: int) -> np.ndarray:
+    """Points clustered at both ends (Chebyshev-Lobatto), where square-root
+    concentration dependences are steepest."""
+    return lo + (hi - lo) * 0.5 * (1 - np.cos(np.linspace(0.0, np.pi, n)))
 
 
 def _c_s_max(key: str, pv) -> float:
@@ -90,7 +97,8 @@ def export(name: str) -> dict:
                 raise ValueError(f"{name}: {key} is not finite on its grid")
             functions[key] = {"args": [a for a in args if a not in fixed], "fixed": fixed,
                               "native_args": args,
-                              "grid": [g.tolist() for g in grids], "values": vals.tolist()}
+                              "grid": [g.tolist() for g in grids],
+                              "values": np.vectorize(lambda x: float(f"{x:.10g}"))(vals).tolist()}
         else:
             try:
                 json.dumps(v)

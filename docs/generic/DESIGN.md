@@ -1,6 +1,6 @@
 # CAE-bench-TN — design of the tool-neutral variant
 
-**Status: design only. No code has been written against it yet.**
+**Status: implemented.** Results in [`generic/PARITY.md`](../../generic/PARITY.md); usage in [`generic/README.md`](../../generic/README.md). Sections below were written before the code and are annotated where the build changed them ("*Built:*").
 CAE-bench-TN ("tool-neutral") is an **unofficial derivative** of
 [svd-ai-lab/cae-bench](https://github.com/svd-ai-lab/cae-bench) (Apache-2.0).
 Its scores are **not** CAE-bench scores and must never be reported as such.
@@ -121,6 +121,14 @@ most packaging & battery KPIs); `native-only` (the three repair/resume tasks;
 tasks whose reference depends on a native parameter/mechanism file a tool
 cannot read). Native-only tasks are still rendered for `opensource`.
 
+*Built:* the four tested adapters are as described. For the trace tracks the
+evaluator's own gates (clean reproduction, artifact, initial state, and for
+PyBaMM the OCV check) are the evidence -- upstream has no solver-file gate
+there, and none was added. The verifier also puts the task's neutral inputs
+back at `/tmp/agent/inputs` (from `tests/inputs`, never from the submission)
+before the replay, because the verifier runs in a different container and a
+non-native replay needs them.
+
 ## 7. Neutral inputs
 
 polyMesh → Gmsh `.msh` (and CGNS via meshio where patches survive); YAML
@@ -130,6 +138,19 @@ round-trips, else a documented JSON dump marked "not BPX". Each conversion is
 proven by solving the oracle **from the neutral file** and comparing KPIs to the
 native-input oracle (same tolerance as gate B); a conversion that fails is shipped
 only with the native original and noted.
+
+*Built:* (a) **BPX is not produced**: PyBaMM 26.7.1.0 can read BPX but has no
+writer, and the `bpx` package is absent from the image. The neutral battery file
+is instead a tabulated data sheet (`caebench-tn-cell-datasheet-v1`: scalars with
+units, every functional parameter tabulated on stated grids), proven by
+re-solving every battery oracle from it. It is an interpolation, so the proof
+measures a small KPI difference rather than floating-point identity; see
+`generic/results/conversions/battery.json`. (b) Mechanisms: Chemkin via
+`write_chemkin`, proven by `ck2yaml` back and re-solving the oracle. (c) Meshes:
+MSH 2.2 written directly from the polyMesh (CGNS skipped: meshio's CGNS writer
+carries no boundary patches), proven by `gmshToFoam` back and a Harbor oracle run
+on the round-tripped grid. Native originals are always kept, and the
+`opensource` profile keeps using them, so no conversion can move a parity score.
 
 ## 8. Calibration tool
 
@@ -157,7 +178,7 @@ inside/outside. It never writes to `kpis.json`.
 - Agent-level parity script (`generic/scripts/agent_parity.sh`) is written but
   **not run** without explicit approval (it spends API money).
 
-## 10. Environment prerequisites (blocking)
+## 10. Environment prerequisites
 
 Gates A–C need a running Docker daemon, Harbor (`uv tool install harbor`),
 and the images `sim-benchmark-{cfd,combustion,battery}-fullstack`,
@@ -165,3 +186,11 @@ and the images `sim-benchmark-{cfd,combustion,battery}-fullstack`,
 `sim-benchmark-fem-fullstack:latest`. **The repository has no Dockerfile or
 build target for `fem-fullstack`** (`build.sh` knows only cfd/combustion/
 battery); the packaging pilot needs it supplied or a documented recipe.
+
+*Built:* `generic/environment/build_local.sh` builds the upstream Dockerfiles
+unchanged behind an HTTPS-intercepting proxy (adds the proxy CA for the build
+only, removes it in the last layer). `generic/environment/fem/Dockerfile` is a
+**local reconstruction** of `fem-fullstack`: Ubuntu 22.04, `calculix-ccx`
+2.17-3 (the version every packaging `kpis.json` records), Gmsh 4.8.4, the
+shared harness. Gate A on it is the evidence that it reproduces the stored
+references; it is not the image upstream used.
